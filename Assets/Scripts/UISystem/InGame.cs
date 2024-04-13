@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.Android;
 
 public class InGame : MonoBehaviour
 {
@@ -13,9 +14,19 @@ public class InGame : MonoBehaviour
     }
 
     // Update is called once per frame
+    bool _isRemove = false;
+    float counter_to_remove = 0;
     void Update()
     {
-        
+        if (_isRemove)
+        {
+            counter_to_remove -= Time.deltaTime;
+            if (counter_to_remove <= 0.0f)
+            {
+                CleanArrows();
+                _isRemove = false;
+            }
+        }
     }
 
     public void NewInput(Directions dir)
@@ -51,8 +62,7 @@ public class InGame : MonoBehaviour
                 else
                 {
                     _arrowsUsed[i].transform.localPosition = new Vector3(x * i - (x * _arrowsUsed.Count / 4), 0, 0);
-                }
-               
+                }              
             }
         }
         else
@@ -60,18 +70,21 @@ public class InGame : MonoBehaviour
             arrow.transform.localPosition = new Vector3(0, 0, 0);
         }
 
-      
-          
-
         _arrowsFree.Remove(_arrowsFree[_arrowsFree.Count - 1]);
     }
 
     public void Clear() {
+        counter_to_remove = 0.5f;
+        _isRemove = true;
+    }
+
+    private void CleanArrows()
+    {
         foreach (GameObject arrow in _arrowsUsed)
         {
             arrow.transform.localPosition = new Vector3(0, -150, 0);
             _arrowsFree.Add(arrow);
-            
+
         }
         _arrowsUsed.Clear();
     }
