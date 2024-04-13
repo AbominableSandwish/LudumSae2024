@@ -14,15 +14,8 @@ public class InputBuffer : MonoBehaviour
         _inputSystem = GetComponent<InputSystem>();
     }
 
-    private void Update()
-    {
         //Input Buffer starts every new event
-        //_inputSystem.EnteredInputs.Clear();
-        if (_inputSystem.EnteredInputs.Count > _currentSpellLength)
-        {
-            //FAILURE
-        }
-    }
+        //Spell Manager will call either Failure OR Success to reset the list
 
     public void Failure()
     {
