@@ -139,7 +139,7 @@ public class SpellManager : MonoBehaviour
                     _requestSystem.SpellSucess(spellsDetected[0].resolution);
                     spellsDetected.Clear();
                     isSearch = false;
-                    _ui.Clear();
+                    _ui.Action();
                     return;
                 }
             }
