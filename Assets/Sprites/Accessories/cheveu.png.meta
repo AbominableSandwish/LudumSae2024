@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: a67618f9f845aa74ab1a1188df6faf2b
+guid: 42cc74bdb401fa2439f3ac188c707d74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4188123700833871707
-    second: oeil_1_0
-  - first:
-      213: -3640890442790354158
-    second: oeil_1_1
+      213: 8459428819013020240
+    second: cheveu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,11 +46,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.36, y: -0.94}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,43 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oeil_1_0
+      name: cheveu_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 36
-        width: 38
-        height: 38
+        x: 27
+        y: 13
+        width: 79
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b57e897f0543f1a30800000000000000
-      internalID: 4188123700833871707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oeil_1_1
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 34
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 213cd5bbe65f87dc0800000000000000
-      internalID: -3640890442790354158
+      spriteID: 05a29ffd0bde56570800000000000000
+      internalID: 8459428819013020240
       vertices: []
       indices: 
       edges: []
@@ -160,14 +136,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cheveu_0: 8459428819013020240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

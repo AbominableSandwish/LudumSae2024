@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 42cc74bdb401fa2439f3ac188c707d74
+guid: 2a9fd8d5050cfd6468794c23f99f29df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8459428819013020240
-    second: cheveu_0
+      213: -7960794081622219200
+    second: monosourcil_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,11 +46,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.38, y: -0.2}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cheveu_0
+      name: monosourcil_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 13
-        width: 79
-        height: 81
+        x: 24
+        y: 23
+        width: 281
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05a29ffd0bde56570800000000000000
-      internalID: 8459428819013020240
+      spriteID: 04620eaf5f3958190800000000000000
+      internalID: -7960794081622219200
       vertices: []
       indices: 
       edges: []
@@ -136,14 +136,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      monosourcil_0: -7960794081622219200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 229590e82d5d94d438b8037ff357637c
+guid: fa15918ecc4af464a95e54c0b8ef3a82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2820840148265066455
-    second: chapeau_de_fete_0
-  - first:
-      213: -5113169777545920620
-    second: chapeau_de_fete_1
+      213: -8737069660686675152
+    second: bec_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,11 +46,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.6}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,43 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chapeau_de_fete_0
+      name: bec_3_0
       rect:
         serializedVersion: 2
-        x: 122
-        y: 291
-        width: 127
-        height: 189
+        x: 25
+        y: 5
+        width: 103
+        height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dfdf7d5b23a52720800000000000000
-      internalID: 2820840148265066455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapeau_de_fete_1
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 0
-        width: 269
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49fbc159d2f5a09b0800000000000000
-      internalID: -5113169777545920620
+      spriteID: 0339de04f61bfb680800000000000000
+      internalID: -8737069660686675152
       vertices: []
       indices: 
       edges: []
@@ -160,14 +136,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bec_3_0: -8737069660686675152
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
