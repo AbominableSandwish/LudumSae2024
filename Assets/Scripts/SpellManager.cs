@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-class Spell
+public class Spell
 {
     public int id;
     public string name;
@@ -74,6 +74,19 @@ public class SpellManager : MonoBehaviour
     List<Spell> spellsDetected;
     bool isSearch = false;
 
+    public Spell GetSpell(int id)
+    {
+        Spell spell_to_return = null;
+        foreach (Spell spell in spells)
+        {
+            if (spell.id == id)
+            {
+                spell_to_return =  spell;
+            }
+        }
+        return spell_to_return;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -136,7 +149,10 @@ public class SpellManager : MonoBehaviour
                 if (spellsDetected[0].incantation.Count == inputBuffer.Count)
                 {
                     _inputmanager.EnteredInputs.Clear();
-                    _requestSystem.SpellSucess(spellsDetected[0].resolution);
+                    if (_requestSystem.NbrRequest != 0)
+                    {
+                        _requestSystem.SpellSucess(spellsDetected[0].resolution);
+                    }
                     spellsDetected.Clear();
                     isSearch = false;
                     _ui.Action();
@@ -148,7 +164,10 @@ public class SpellManager : MonoBehaviour
             if (spellsDetected.Count == 0)
             {
                 _inputmanager.EnteredInputs.Clear();
-                _requestSystem.SpellFailure();
+                if (_requestSystem.NbrRequest != 0)
+                {
+                    _requestSystem.SpellFailure();
+                }
                 isSearch = false;
                 _ui.Clear();
                 return;
