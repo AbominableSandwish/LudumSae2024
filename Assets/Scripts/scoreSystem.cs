@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scoreSysteme : MonoBehaviour
+public class scoreSystem : MonoBehaviour
 {
 
     [SerializeField] private float _score;
@@ -23,7 +23,7 @@ public class scoreSysteme : MonoBehaviour
     }
 
 
-    public void SucessSrore(int difficulty)
+    public void SucessScore(int difficulty)
     {
 
         switch (_NumbreComboScore)
