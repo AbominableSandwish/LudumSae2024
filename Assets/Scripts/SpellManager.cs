@@ -12,15 +12,17 @@ class Spell
     public int id;
     public string name;
     public string description;
+    public RequestSystem.resolution resolution;
 
     public List<Directions> incantation;
 
-    public Spell(int id, string name, string description, List<Directions> incantation)
+    public Spell(int id, string name, string description, List<Directions> incantation, RequestSystem.resolution resolution)
     {
         this.id = id;
         this.name = name;
         this.description = description;
         this.incantation = incantation;
+        this.resolution = resolution;
     }
     public static Spell Water(int id)
     {
@@ -31,7 +33,7 @@ class Spell
         incantation.Add(Directions.Up);
         incantation.Add(Directions.Down);
 
-        return new Spell(id, "Water", "GlouGLou", incantation);
+        return new Spell(id, "Water", "GlouGLou", incantation, RequestSystem.resolution.Hurt);
     }
     public static Spell Fire(int id)
     {
@@ -42,7 +44,7 @@ class Spell
         incantation.Add(Directions.Right);
         incantation.Add(Directions.Left);
 
-        return new Spell(id, "Fire", "AHHHHHHHH", incantation);
+        return new Spell(id, "Fire", "AHHHHHHHH", incantation, RequestSystem.resolution.Hurt);
     }
     public static Spell Heal(int id)
     {
@@ -53,7 +55,7 @@ class Spell
         incantation.Add(Directions.Right);
         incantation.Add(Directions.Down);
 
-        return new Spell(id, "Heal", "Ohhhhhh", incantation);
+        return new Spell(id, "Heal", "Ohhhhhh", incantation, RequestSystem.resolution.Hurt);
     }
 
 }
@@ -64,7 +66,9 @@ class Spell
 
 public class SpellManager : MonoBehaviour
 {
-    InputSystem manager;
+    InputSystem _inputmanager;
+    RequestSystem _requestSystem;
+    InGame _ui;
 
     List<Spell> spells;
     List<Spell> spellsDetected;
@@ -73,7 +77,10 @@ public class SpellManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        manager = GameObject.Find("InputSystem").GetComponent<InputSystem>();
+        _ui = GameObject.Find("UI").GetComponent<InGame>();
+        _inputmanager = GameObject.Find("InputSystem").GetComponent<InputSystem>();
+        _requestSystem = GameObject.Find("RequestSystem").GetComponent<RequestSystem>();
+
         spells = new List<Spell>();
         spellsDetected = new List<Spell>();
 
@@ -91,7 +98,7 @@ public class SpellManager : MonoBehaviour
     void CheckInputBuffer()
     {
         List<Spell> toRemove = new List<Spell>();
-        List<Directions> inputBuffer = manager.EnteredInputs;
+        List<Directions> inputBuffer = _inputmanager.EnteredInputs;
         if (spellsDetected.Count == 0)
         {
             if(inputBuffer.Count != 0)
@@ -128,10 +135,11 @@ public class SpellManager : MonoBehaviour
             {
                 if (spellsDetected[0].incantation.Count == inputBuffer.Count)
                 {
-                    Debug.Log("Success");
-                    manager.EnteredInputs.Clear();
+                    _inputmanager.EnteredInputs.Clear();
+                    _requestSystem.SpellSucess(spellsDetected[0].resolution);
                     spellsDetected.Clear();
                     isSearch = false;
+                    _ui.Clear();
                     return;
                 }
             }
@@ -139,9 +147,10 @@ public class SpellManager : MonoBehaviour
             //Failure
             if (spellsDetected.Count == 0)
             {
-                Debug.Log("Failure");
-                manager.EnteredInputs.Clear();
+                _inputmanager.EnteredInputs.Clear();
+                _requestSystem.SpellFailure();
                 isSearch = false;
+                _ui.Clear();
                 return;
             }
         }
