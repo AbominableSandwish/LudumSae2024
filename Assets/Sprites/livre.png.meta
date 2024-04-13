@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5750a99ce510a5a43be4d0303520d03f
+guid: b32e1807170013449971caea87938758
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3820024677358395979
-    second: directionnelle-gauche-fleche-apercu_318-61135-2599381589_0
+      213: 3673446464866942000
+    second: livre_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 161
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: directionnelle-gauche-fleche-apercu_318-61135-2599381589_0
+      name: livre_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 36
         y: 0
-        width: 626
-        height: 626
+        width: 100
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b426c276434730530800000000000000
-      internalID: 3820024677358395979
+      spriteID: 03cfec7d814baf230800000000000000
+      internalID: 3673446464866942000
       vertices: []
       indices: 
       edges: []
@@ -144,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      directionnelle-gauche-fleche-apercu_318-61135-2599381589_0: 3820024677358395979
+      livre_0: 3673446464866942000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -24,7 +24,7 @@ public class InputSystem : MonoBehaviour
     }
     
     private void Start()
-    {
+    { 
         _ui = GameObject.Find("UI").GetComponent<InGame>();
         //Subscribe to Button type actions
         _playerControls.Player.Pause.performed += _ => Pause();
