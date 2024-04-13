@@ -10,8 +10,8 @@ public class BookSpell : MonoBehaviour
 
     [SerializeField] private Image _imageSpell_0;
     [SerializeField] private Image _imageSpell_1;
-    [SerializeField] private TextMeshPro _title;
-    [SerializeField] private TextMeshPro _description;
+    [SerializeField] private TextMeshProUGUI _title;
+    [SerializeField] private TextMeshProUGUI _description;
 
     [SerializeField] private List<Image> _arrows;
     SpellManager _spellManager;
@@ -57,10 +57,13 @@ public class BookSpell : MonoBehaviour
             }
             i++;
         }
+
+        _canvas.enabled = true;
+
     }
 
     public void CloseBook()
     {
-
+        _canvas.enabled = false;
     }
 }
