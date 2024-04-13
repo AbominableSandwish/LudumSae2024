@@ -72,4 +72,10 @@ public class GameManager : MonoBehaviour
     {
         _isPaused = !_isPaused;
     }
+
+    public void Exit()
+    {
+        SetGameState(GameState.Menu);
+    }
+    
 }
