@@ -5,58 +5,58 @@ using UnityEngine.InputSystem;
 
 public class InputSystem : MonoBehaviour
 {
-    public enum Directions
-    {
-        Up,
-        Right,
-        Down,
-        Left
-    }
     
-    private PlayerInput _playerInput;
     private PlayerControls _playerControls;
+    private List<Directions> _enteredInputs = new List<Directions>();
+
+    public List<Directions> EnteredInputs
+    {
+        get => _enteredInputs;
+        set => _enteredInputs = value;
+    }
+
+    private void Awake()
+    {
+        _playerControls = new PlayerControls();
+    }
     
     private void Start()
     {
-        _playerInput = GetComponent<PlayerInput>();
-
         //Subscribe to Button type actions
         _playerControls.Player.Up.performed += _ => Up();
-        _playerControls.Player.Right.performed += _ => Down();
-        _playerControls.Player.Down.performed += _ => Right();
+        _playerControls.Player.Right.performed += _ => Right();
+        _playerControls.Player.Down.performed += _ => Down();
         _playerControls.Player.Left.performed += _ => Left();
     }
-
-    void Update()
+    
+    private void OnEnable()
     {
-        PlayerInput();
+        _playerControls.Enable();
     }
 
-    private void PlayerInput()
+    private void OnDisable()
     {
-        
+        if (_playerControls != null)
+            _playerControls.Disable();
     }
     
     private void Up()
     {
-        throw new System.NotImplementedException();
+        _enteredInputs.Add(Directions.Up);
     }
-    
-    
-    private void Down()
-    {
-        throw new System.NotImplementedException();
-    }
-    
     
     private void Right()
     {
-        throw new System.NotImplementedException();
+        _enteredInputs.Add(Directions.Right);
     }
     
+    private void Down()
+    {
+        _enteredInputs.Add(Directions.Down);
+    }
     
     private void Left()
     {
-        throw new System.NotImplementedException();
+        _enteredInputs.Add(Directions.Left);
     }
 }
