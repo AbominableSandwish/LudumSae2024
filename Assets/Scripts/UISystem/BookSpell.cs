@@ -22,6 +22,7 @@ public class BookSpell : MonoBehaviour
     void Start()
     {
         _spellManager = GameObject.Find("SpellManager").GetComponent<SpellManager>();
+        _canvas.enabled = false;
     }
 
     // Update is called once per frame
