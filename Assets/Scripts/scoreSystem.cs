@@ -68,7 +68,7 @@ public class scoreSystem : MonoBehaviour
         
     }
     
-    public void FailureSrore()
+    public void FailureScore()
     {
         _NumbreComboScore = 1;
         
