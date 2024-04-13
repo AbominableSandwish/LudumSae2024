@@ -64,16 +64,16 @@ public class InGame : MonoBehaviour
         switch (dir)
         {
             case Directions.Up:
-                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(270, Vector3.forward);
+                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(0, Vector3.forward);
                 break; 
             case Directions.Down:
-                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(90, Vector3.forward);
+                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(180, Vector3.forward);
                 break;
             case Directions.Left:
-                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(0, Vector3.forward);
+                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(90, Vector3.forward);
                 break;
             case Directions.Right:
-                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(180, Vector3.forward);
+                arrow.GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(270, Vector3.forward);
                 break;
         }
        
