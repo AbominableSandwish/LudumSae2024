@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1294022428554066567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6072516522710066884}
+  - component: {fileID: 3407060866668205794}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6072516522710066884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294022428554066567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3407060866668205794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294022428554066567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deccc489493b5e049b06e9ca1b1179d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickBtn: {fileID: 0}
+  switchBtn: {fileID: 0}
+  Alert: {fileID: 0}
+  _SpellSucess: {fileID: 8300000, guid: c999b66381ac528458ed6f5830e822de, type: 3}
+  _SpellSucessVariant: {fileID: 8300000, guid: 8b052d9267dc53049bc70a675b90bb0a, type: 3}
+  _SpellFailure: {fileID: 8300000, guid: 0a174ffdc86502e4986be619493dc58b, type: 3}
+  mainMenu: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
+  inGame: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
+  scoreMenu: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
+  mixer: {fileID: 24100000, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
+  groupSound: {fileID: -4882759331916342335, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
+  groupVoice: {fileID: 3754848512013378288, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
+  groupMusic: {fileID: 3051759645754586754, guid: 7096803db16a49c499d3659594e39d0a, type: 2}

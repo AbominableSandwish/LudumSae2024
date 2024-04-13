@@ -14,4 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AboutMenu.unity
     guid: 3c36362e5c689af4c9ede3f1e7d0dec1
+  - enabled: 1
+    path: Assets/Scenes/DylanScene.unity
+    guid: eb6be69be0dc8654fb080ea75a2e3693
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

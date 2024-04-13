@@ -68,6 +68,7 @@ public class SpellManager : MonoBehaviour
 {
     InputSystem _inputmanager;
     RequestSystem _requestSystem;
+    SoundManager _soundmanager;
     InGame _ui;
 
     List<Spell> spells;
@@ -93,6 +94,7 @@ public class SpellManager : MonoBehaviour
         _ui = GameObject.Find("UI").GetComponent<InGame>();
         _inputmanager = GameObject.Find("InputSystem").GetComponent<InputSystem>();
         _requestSystem = GameObject.Find("RequestSystem").GetComponent<RequestSystem>();
+        _soundmanager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
         spells = new List<Spell>();
         spellsDetected = new List<Spell>();
@@ -149,9 +151,11 @@ public class SpellManager : MonoBehaviour
                 if (spellsDetected[0].incantation.Count == inputBuffer.Count)
                 {
                     _inputmanager.EnteredInputs.Clear();
+                    _soundmanager.PlaySound(SoundManager.Sound.SpellSucess);
                     if (_requestSystem.NbrRequest != 0)
                     {
                         _requestSystem.SpellSucess(spellsDetected[0].resolution);
+                       
                     }
                     spellsDetected.Clear();
                     isSearch = false;
@@ -164,9 +168,11 @@ public class SpellManager : MonoBehaviour
             if (spellsDetected.Count == 0)
             {
                 _inputmanager.EnteredInputs.Clear();
+                _soundmanager.PlaySound(SoundManager.Sound.SpellFailure);
                 if (_requestSystem.NbrRequest != 0)
                 {
                     _requestSystem.SpellFailure();
+                    
                 }
                 isSearch = false;
                 _ui.Clear();

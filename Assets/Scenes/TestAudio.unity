@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -44,7 +44,6 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -156,9 +152,9 @@ MonoBehaviour:
   switchBtn: {fileID: 0}
   Alert: {fileID: 0}
   _breakingNews: []
-  mainMenu: {fileID: 0}
-  inGame: {fileID: 0}
-  scoreMenu: {fileID: 0}
+  mainMenu: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
+  inGame: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
+  scoreMenu: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
   mixer: {fileID: 24100000, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
   groupSound: {fileID: -4882759331916342335, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
   groupVoice: {fileID: 3754848512013378288, guid: 7096803db16a49c499d3659594e39d0a, type: 2}

@@ -16,8 +16,10 @@ public class SoundManager : MonoBehaviour
     [Header("Event")]
     [SerializeField] private AudioClip Alert;
 
-    [Header("BreakingNews")]
-    [SerializeField] private AudioClip[] _breakingNews;
+    [Header("Spell")]
+    [SerializeField] private AudioClip _SpellSucess;
+    [SerializeField] private AudioClip _SpellSucessVariant;
+    [SerializeField] private AudioClip _SpellFailure;
 
 
 
@@ -56,7 +58,9 @@ public class SoundManager : MonoBehaviour
     public enum Sound
     {
         Alert = 0,
-        BreakingNews = 1
+        SpellSucess = 1,
+        SpellSucessVariant = 2,
+        SpellFailure = 3
     }
 
     public enum Voice
@@ -117,8 +121,14 @@ public class SoundManager : MonoBehaviour
                 audioResource = Alert;
                 break;
 
-            case Sound.BreakingNews:
-                audioResource = _breakingNews[Random.Range(0, _breakingNews.Count() - 1)];
+            case Sound.SpellSucess:
+                audioResource = _SpellSucess;
+                break;
+            case Sound.SpellSucessVariant:
+                audioResource = _SpellSucessVariant;
+                break;
+            case Sound.SpellFailure:
+                audioResource = _SpellFailure;
                 break;
 
         }
