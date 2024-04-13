@@ -68,6 +68,7 @@ public class SpellManager : MonoBehaviour
 {
     InputSystem _inputmanager;
     RequestSystem _requestSystem;
+    InGame _ui;
 
     List<Spell> spells;
     List<Spell> spellsDetected;
@@ -76,6 +77,7 @@ public class SpellManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _ui = GameObject.Find("UI").GetComponent<InGame>();
         _inputmanager = GameObject.Find("InputSystem").GetComponent<InputSystem>();
         _requestSystem = GameObject.Find("RequestSystem").GetComponent<RequestSystem>();
 
@@ -137,6 +139,7 @@ public class SpellManager : MonoBehaviour
                     _requestSystem.SpellSucess(spellsDetected[0].resolution);
                     spellsDetected.Clear();
                     isSearch = false;
+                    _ui.Clear();
                     return;
                 }
             }
@@ -144,10 +147,10 @@ public class SpellManager : MonoBehaviour
             //Failure
             if (spellsDetected.Count == 0)
             {
-                Debug.Log("Failure");
                 _inputmanager.EnteredInputs.Clear();
                 _requestSystem.SpellFailure();
                 isSearch = false;
+                _ui.Clear();
                 return;
             }
         }

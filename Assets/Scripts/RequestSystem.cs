@@ -23,7 +23,7 @@ public class RequestSystem : MonoBehaviour
     private List<Request> _requests;
     public int  NbrRequest = 0;
 
-    private scoreSysteme _score;
+    private scoreSystem _score;
     public enum resolution
     {
         Hurt = 2
@@ -35,7 +35,7 @@ public class RequestSystem : MonoBehaviour
     void Start()
     {
         if (GameObject.Find("ScoreSystem"))
-            _score = GameObject.Find("ScoreSystem").GetComponent<scoreSysteme>();
+            _score = GameObject.Find("ScoreSystem").GetComponent<scoreSystem>();
         _requests = new List<Request>();
     }
 
@@ -54,13 +54,13 @@ public class RequestSystem : MonoBehaviour
             if (_requests[0]._resolution == resolution.Hurt)
             {
                 Debug.Log("Success");
-                _score.SucessSrore(_requests[0]._difficulty);
+                _score.SucessScore(_requests[0]._difficulty);
             }
 
             //Failure
             if (_requests[0]._resolution != resolution.Hurt)
             {
-                _score.FailureSrore();
+                _score.FailureScore();
             }
 
             _requests.Remove(_requests[0]);
@@ -73,7 +73,7 @@ public class RequestSystem : MonoBehaviour
         if (_requests.Count != 0)
         {
             //Failure
-            _score.FailureSrore();
+            _score.FailureScore();
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
         }
