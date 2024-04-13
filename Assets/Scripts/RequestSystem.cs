@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -7,6 +8,7 @@ using UnityEngine.UIElements;
 
 public class RequestSystem : MonoBehaviour
 {
+    CharacterManager _characterManager;
     public class Request
     {
         public resolution _resolution;
@@ -36,6 +38,8 @@ public class RequestSystem : MonoBehaviour
     {
         if (GameObject.Find("ScoreSystem"))
             _score = GameObject.Find("ScoreSystem").GetComponent<scoreSystem>();
+        if (GameObject.Find("Peeps"))
+            _characterManager = GameObject.Find("Peeps").GetComponent<CharacterManager>();
         _requests = new List<Request>();
     }
 
@@ -53,14 +57,17 @@ public class RequestSystem : MonoBehaviour
             {
                 Debug.Log("Success");
                 _score.SucessScore(_requests[0]._difficulty);
+                
             }
 
+           
             //Failure
             if (_requests[0]._resolution != resolution.Hurt)
             {
                 _score.FailureScore();
             }
 
+            _characterManager.FreePeep();
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
         }
@@ -74,10 +81,12 @@ public class RequestSystem : MonoBehaviour
             _score.FailureScore();
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
+            _characterManager.FreePeep();
         }
     }
     public void NewRequest()
     {
+        _characterManager.NewPeep();
         _requests.Add(new Request(resolution.Hurt));
         NbrRequest = _requests.Count;
     }
