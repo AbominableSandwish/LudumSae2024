@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 8c991d8b79f3f7240855e521de50aa9a
+guid: 565d2f12ae262b34cb527d62840b44a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4533452537135443045
-    second: oeil_content_0
+      213: 5982076949318421655
+    second: oeil_rate_1_0
   - first:
-      213: -7756526479263388062
-    second: oeil_content_1
-  - first:
-      213: -764617600448933708
-    second: oeil_content_2
-  - first:
-      213: 4612524393824506901
-    second: oeil_content_3
-  - first:
-      213: 2010530224741717335
-    second: oeil_content_4
+      213: -2684033573427437531
+    second: oeil_rate_1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -58,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oeil_content_0
+      name: oeil_rate_1_0
       rect:
         serializedVersion: 2
-        x: 67
-        y: 95
-        width: 48
-        height: 49
+        x: 21
+        y: 15
+        width: 92
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56c2d02301f0aee30800000000000000
-      internalID: 4533452537135443045
+      spriteID: 79c4d2f7a4b940350800000000000000
+      internalID: 5982076949318421655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oeil_content_1
+      name: oeil_rate_1_1
       rect:
         serializedVersion: 2
-        x: 213
-        y: 96
-        width: 62
-        height: 40
+        x: 156
+        y: 16
+        width: 98
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,71 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26e289053484b5490800000000000000
-      internalID: -7756526479263388062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oeil_content_2
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 45
-        width: 32
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b0da30f7588365f0800000000000000
-      internalID: -764617600448933708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oeil_content_3
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 35
-        width: 34
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 514dbbb7f7af20040800000000000000
-      internalID: 4612524393824506901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oeil_content_4
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 22
-        width: 52
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7559aef4696d6eb10800000000000000
-      internalID: 2010530224741717335
+      spriteID: 520a2a28fa560cad0800000000000000
+      internalID: -2684033573427437531
       vertices: []
       indices: 
       edges: []
@@ -232,14 +160,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oeil_rate_1_0: 5982076949318421655
+      oeil_rate_1_1: -2684033573427437531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

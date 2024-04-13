@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 053300bf2bac8a24db897504ea2d9935
+guid: 229590e82d5d94d438b8037ff357637c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -294477916138996383
-    second: oeil_rate_2_0
+      213: 2820840148265066455
+    second: chapeau_de_fete_0
   - first:
-      213: -3745602429163536640
-    second: oeil_rate_2_1
+      213: -5113169777545920620
+    second: chapeau_de_fete_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,11 +49,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.37, y: 0.37}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,43 +116,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oeil_rate_2_0
+      name: chapeau_de_fete_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 18
-        width: 55
-        height: 50
+        x: 122
+        y: 291
+        width: 127
+        height: 189
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16d765e35edc9ebf0800000000000000
-      internalID: -294477916138996383
+      spriteID: 7dfdf7d5b23a52720800000000000000
+      internalID: 2820840148265066455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oeil_rate_2_1
+      name: chapeau_de_fete_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 26
-        width: 55
-        height: 43
+        x: 51
+        y: 0
+        width: 269
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00ffddb8f62f40cc0800000000000000
-      internalID: -3745602429163536640
+      spriteID: 49fbc159d2f5a09b0800000000000000
+      internalID: -5113169777545920620
       vertices: []
       indices: 
       edges: []
@@ -160,14 +160,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chapeau_de_fete_0: 2820840148265066455
+      chapeau_de_fete_1: -5113169777545920620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

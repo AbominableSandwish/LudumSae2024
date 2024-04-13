@@ -6,6 +6,7 @@ public class CharacterSpawner : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _body;
     [SerializeField] private SpriteRenderer _accessory;
+    [SerializeField] private SpriteRenderer _accessory2;
     [SerializeField] private List<Sprite> _accessoriesList;
     [SerializeField] private SpriteRenderer _beak;
     [SerializeField] private List<Sprite> _beaksList;
@@ -16,6 +17,7 @@ public class CharacterSpawner : MonoBehaviour
     {
         _body.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
         _accessory.sprite = _accessoriesList[Random.Range(0, _accessoriesList.Count)];
+        _accessory2.sprite = _accessoriesList[Random.Range(0, _accessoriesList.Count)];
         _beak.sprite = _beaksList[Random.Range(0, _beaksList.Count)];
         _eyes.sprite = _eyesList[Random.Range(0, _eyesList.Count)];
     }

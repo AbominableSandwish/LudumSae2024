@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fdc4200bd9809c44db0dfbd2630a8d8a
+guid: 74584c947370dd047b5128a7a63cfdd0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4697881029805883792
-    second: Jam_avril_2024_v2 copy_0
+      213: -2220712007331912887
+    second: bec_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,8 +49,8 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.6, y: 0.55}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -113,22 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jam_avril_2024_v2 copy_0
+      name: bec_2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 7
+        y: 5
+        width: 77
+        height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07ebf550816cdceb0800000000000000
-      internalID: -4697881029805883792
+      spriteID: 9436986f1327e21e0800000000000000
+      internalID: -2220712007331912887
       vertices: []
       indices: 
       edges: []
@@ -137,14 +137,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jam_avril_2024_v2 copy_0: -4697881029805883792
+      bec_2_0: -2220712007331912887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

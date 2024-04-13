@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 52ea99e8268a3aa4fa8ca336966797e5
+guid: 8c991d8b79f3f7240855e521de50aa9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1860277956584395748
-    second: oeil_2_0
+      213: 4533452537135443045
+    second: oeil_content_0
   - first:
-      213: -4648226397665359965
-    second: oeil_2_1
+      213: -7756526479263388062
+    second: oeil_content_1
+  - first:
+      213: -764617600448933708
+    second: oeil_content_2
+  - first:
+      213: 4612524393824506901
+    second: oeil_content_3
+  - first:
+      213: 2010530224741717335
+    second: oeil_content_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,11 +58,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.56, y: 0.68}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -78,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,43 +125,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oeil_2_0
+      name: oeil_content_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 12
-        width: 59
-        height: 41
+        x: 67
+        y: 95
+        width: 48
+        height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e3d3b102f801d910800000000000000
-      internalID: 1860277956584395748
+      spriteID: 56c2d02301f0aee30800000000000000
+      internalID: 4533452537135443045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oeil_2_1
+      name: oeil_content_1
       rect:
         serializedVersion: 2
-        x: 177
-        y: 10
-        width: 55
-        height: 42
+        x: 213
+        y: 96
+        width: 62
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a7009bf7be2e7fb0800000000000000
-      internalID: -4648226397665359965
+      spriteID: 26e289053484b5490800000000000000
+      internalID: -7756526479263388062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oeil_content_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 45
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0da30f7588365f0800000000000000
+      internalID: -764617600448933708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oeil_content_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 35
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514dbbb7f7af20040800000000000000
+      internalID: 4612524393824506901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oeil_content_4
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 22
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7559aef4696d6eb10800000000000000
+      internalID: 2010530224741717335
       vertices: []
       indices: 
       edges: []
@@ -160,14 +232,19 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oeil_content_0: 4533452537135443045
+      oeil_content_1: -7756526479263388062
+      oeil_content_2: -764617600448933708
+      oeil_content_3: 4612524393824506901
+      oeil_content_4: 2010530224741717335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
