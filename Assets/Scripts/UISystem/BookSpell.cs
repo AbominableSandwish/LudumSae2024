@@ -16,11 +16,15 @@ public class BookSpell : MonoBehaviour
     [SerializeField] private List<Image> _arrows;
     SpellManager _spellManager;
 
+    SoundManager _soundManager;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        if (GameObject.Find("SoundManager"))
+            _soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         _spellManager = GameObject.Find("SpellManager").GetComponent<SpellManager>();
         _canvas.enabled = false;
     }
@@ -61,10 +65,19 @@ public class BookSpell : MonoBehaviour
 
         _canvas.enabled = true;
 
+        if (_soundManager)
+        {
+            _soundManager.PlayMenu(SoundManager.Menu.OpenBook);
+        }
+
     }
 
     public void CloseBook()
     {
         _canvas.enabled = false;
+        if (_soundManager)
+        {
+            _soundManager.PlayMenu(SoundManager.Menu.CloseBook);
+        }
     }
 }

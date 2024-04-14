@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 
@@ -10,6 +11,7 @@ public class RequestSystem : MonoBehaviour
 {
     CharacterManager _characterManager;
     SpellManager _spellManager;
+    SoundManager _soundManager;
 
 
     public class Request
@@ -44,12 +46,14 @@ public class RequestSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameObject.Find("ScoreSystem"))
-            _score = GameObject.Find("ScoreSystem").GetComponent<scoreSystem>();
+        if (GameObject.Find("score"))
+            _score = GameObject.Find("score").GetComponent<scoreSystem>();
         if (GameObject.Find("SpellManager"))
             _spellManager = GameObject.Find("SpellManager").GetComponent<SpellManager>();
         if (GameObject.Find("Peeps"))
             _characterManager = GameObject.Find("Peeps").GetComponent<CharacterManager>();
+        if (GameObject.Find("SoundManager"))
+            _soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         _requests = new List<Request>();
 
        
@@ -59,15 +63,26 @@ public class RequestSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_soundManager)
+        {
+            if (_requests.Count >= 8)
+            {
+                _soundManager.SetPitchMusic(3);
+            }
 
+            if (_requests.Count < 8)
+            {
+                _soundManager.SetPitchMusic(1);
+            }
+        }
     }
 
     public void SpellSucess(resolution spell)
     {
         //Existing spell
         if(_requests.Count != 0) {
-            //Right spell
-            if (_requests[0]._resolution == resolution.Hurt)
+            //Sucess
+            if (_requests[0]._resolution == spell)
             {
                 Debug.Log("Success");
                 _score.SucessScore(_requests[0]._difficulty);
@@ -77,8 +92,8 @@ public class RequestSystem : MonoBehaviour
             }
 
            
-            //Wrong spell
-            if (_requests[0]._resolution != resolution.Hurt)
+            //Failure
+            if (_requests[0]._resolution != spell)
             {
                 _score.FailureScore();
                 _characterManager.FreePeep(false);
@@ -116,5 +131,9 @@ public class RequestSystem : MonoBehaviour
 
         if (_requests.Count == 1)
             GameObject.Find("SpeechBubble").GetComponent<UIBubble>().SetComplaints(spells[rdm].resolution);
+        if (_requests.Count == 10)
+        {
+            SceneManager.LoadScene("MenuScore");
+        }
     }
 }

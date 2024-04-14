@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d7e6a37a479cef4ea9f28c0cfce9aa5
+guid: 0db3959cb9829de4fbed8c4b4ac16876
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5602719182251616001
-    second: oeuf_v1_0
+      213: 9039913736544270448
+    second: bouton_v2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oeuf_v1_0
+      name: bouton_v2_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 5
-        width: 109
-        height: 140
+        x: 12
+        y: 12
+        width: 392
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff810a596942f32b0800000000000000
-      internalID: -5602719182251616001
+      spriteID: 07835ead5a9347d70800000000000000
+      internalID: 9039913736544270448
       vertices: []
       indices: 
       edges: []
@@ -123,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -131,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      oeuf_v1_0: -5602719182251616001
+      bouton_v2_0: 9039913736544270448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
