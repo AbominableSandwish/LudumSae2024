@@ -29,7 +29,9 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private Sprite _metamorphosisFailure;
     [SerializeField] private Sprite _metamorphosisSuccess1;
     [SerializeField] private Sprite _metamorphosisSuccess2;
-    
+
+    public SpriteRenderer SpellResult1 => _spellResult1;
+
     public void SpawnCharacter()
     {
         _body.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
