@@ -85,6 +85,11 @@ MonoBehaviour:
   _pause: {fileID: 2455290872909310501}
   _parametre: {fileID: 8004500886000207493}
   _TextPause: {fileID: 2539378190600412900}
+  _sliderMaster: {fileID: 788632666476162983}
+  _sliderMusic: {fileID: 7669345279377447502}
+  _sliderSound: {fileID: 3600972100970118803}
+  _sliderVoice: {fileID: 4316667976646490694}
+  _sliderUI: {fileID: 0}
   IsParametre: 0
 --- !u!1 &358889613765541570
 GameObject:
@@ -375,9 +380,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7502973384069607427}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -465,9 +470,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7607004345248469791}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1150,9 +1155,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5697200904116007246}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1977,9 +1982,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7243871791371139996}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -44,12 +44,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deccc489493b5e049b06e9ca1b1179d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickBtn: {fileID: 0}
-  switchBtn: {fileID: 0}
   Alert: {fileID: 0}
+  _birdFly:
+  - {fileID: 8300000, guid: 1a565b977023eaa4c9b870ddaca6f794, type: 3}
+  - {fileID: 8300000, guid: db8cb4cb470bb644c9fc21d2993f9af6, type: 3}
+  - {fileID: 8300000, guid: 1cf22f2df223cff4a8ec5170a59dc1c6, type: 3}
+  - {fileID: 8300000, guid: 358ccdc73cc746349be2eae85be12b3f, type: 3}
   _SpellSucess: {fileID: 8300000, guid: c999b66381ac528458ed6f5830e822de, type: 3}
   _SpellSucessVariant: {fileID: 8300000, guid: 8b052d9267dc53049bc70a675b90bb0a, type: 3}
   _SpellFailure: {fileID: 8300000, guid: 0a174ffdc86502e4986be619493dc58b, type: 3}
+  _burning: {fileID: 8300000, guid: ccd8c89e8407ee94ab4bf3dd12f9c05e, type: 3}
+  _demon: {fileID: 8300000, guid: d28cf18796173fc419b5086f93fe4589, type: 3}
+  _openPickle: {fileID: 8300000, guid: da551f796c7b52a4cac3e401653ed9f1, type: 3}
+  _sucessStealth: {fileID: 8300000, guid: a256fad847a83b842a6e1e11463dc9e9, type: 3}
+  _failureStealth: {fileID: 8300000, guid: eada87e54649f4f4199b5dd74edf5644, type: 3}
+  _clickBtn: {fileID: 8300000, guid: ff52e15fee5ff3c4389e8b38e9ee5784, type: 3}
+  _openBook: {fileID: 8300000, guid: 4cdce51c100ae21479e0480bfc5e7f26, type: 3}
+  _closeBook: {fileID: 8300000, guid: 4ae06bc979573084f88fd36194380f6b, type: 3}
   mainMenu: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
   inGame: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
   scoreMenu: {fileID: 8300000, guid: a56ba7df0d51fb84eb9b405f39b48f09, type: 3}
@@ -57,3 +68,4 @@ MonoBehaviour:
   groupSound: {fileID: -4882759331916342335, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
   groupVoice: {fileID: 3754848512013378288, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
   groupMusic: {fileID: 3051759645754586754, guid: 7096803db16a49c499d3659594e39d0a, type: 2}
+  groupUI: {fileID: -9098999648198108910, guid: 7096803db16a49c499d3659594e39d0a, type: 2}

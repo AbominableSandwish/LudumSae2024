@@ -5,23 +5,32 @@ using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
+    private const int MAX_MENU_COUNT = 4;
     private const int MAX_SOUND_COUNT = 16;
     private const int MAX_MUSIC_COUNT = 2;
     private const float VELOCITY = 100;
 
-    [Header("Menu")] 
-    [SerializeField] private AudioClip clickBtn;
-    [SerializeField] private AudioClip switchBtn;
 
     [Header("Event")]
     [SerializeField] private AudioClip Alert;
+    [SerializeField] private List<AudioClip> _birdFly;
 
     [Header("Spell")]
     [SerializeField] private AudioClip _SpellSucess;
     [SerializeField] private AudioClip _SpellSucessVariant;
     [SerializeField] private AudioClip _SpellFailure;
 
+    [Header("SpellResult")]
+    [SerializeField] private AudioClip _burning;
+    [SerializeField] private AudioClip _demon;
+    [SerializeField] private AudioClip _openPickle;
+    [SerializeField] private AudioClip _sucessStealth;
+    [SerializeField] private AudioClip _failureStealth;
 
+    [Header("UiSound")]
+    [SerializeField] private AudioClip _clickBtn;
+    [SerializeField] private AudioClip _openBook;
+    [SerializeField] private AudioClip _closeBook;
 
     [Header("Music")] [SerializeField] private AudioClip mainMenu;
     [SerializeField] private AudioClip inGame;
@@ -31,8 +40,10 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioMixerGroup groupSound;
     [SerializeField] private AudioMixerGroup groupVoice;
     [SerializeField] private AudioMixerGroup groupMusic;
+    [SerializeField] private AudioMixerGroup groupUI;
 
     private List<AudioSource> m_SoundsSource;
+    private List<AudioSource> m_MenusSource;
     private List<AudioSource> m_MusicsSource;
 
     private int _transitionState = 1;
@@ -51,8 +62,9 @@ public class SoundManager : MonoBehaviour
 
     public enum Menu
     {
-        Switch = 0,
-        Press = 1,
+        Press = 0,
+        OpenBook = 1,
+        CloseBook = 2
     }
 
     public enum Sound
@@ -60,7 +72,12 @@ public class SoundManager : MonoBehaviour
         Alert = 0,
         SpellSucess = 1,
         SpellSucessVariant = 2,
-        SpellFailure = 3
+        SpellFailure = 3,
+        Burning = 4,
+        Demon = 5,
+        OpenPickle = 6,
+        SuccesStealth = 7,
+        FailureStealth = 8
     }
 
     public enum Voice
@@ -96,6 +113,15 @@ public class SoundManager : MonoBehaviour
             m_SoundsSource.Add(audioSource);
         }
 
+        m_MenusSource = new List<AudioSource>();
+        for (int i = 0; i < MAX_MENU_COUNT; i++)
+        {
+            var audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.outputAudioMixerGroup = groupUI;
+            m_MenusSource.Add(audioSource);
+        }
+
+
         m_MusicsSource = new List<AudioSource>();
         for (int i = 0; i < MAX_MUSIC_COUNT; i++)
         {
@@ -130,11 +156,58 @@ public class SoundManager : MonoBehaviour
             case Sound.SpellFailure:
                 audioResource = _SpellFailure;
                 break;
+            case Sound.Burning:
+                audioResource = _burning;
+                break;
+            case Sound.Demon:
+                audioResource = _demon;
+                break;
+            case Sound.OpenPickle:
+                audioResource = _openPickle;
+                break;
+            case Sound.SuccesStealth:
+                audioResource = _sucessStealth;
+                break;
+            case Sound.FailureStealth:
+                audioResource = _failureStealth;
+                break;
+
 
         }
 
         // One AudioSource is free ?
         foreach (AudioSource soundSource in m_SoundsSource)
+        {
+            if (soundSource.isPlaying) continue;
+
+            soundSource.clip = audioResource;
+            float oldPitch = soundSource.pitch;
+            soundSource.pitch = Random.Range(0.9f, 1.1f);
+            soundSource.Play();
+            soundSource.pitch = oldPitch;
+            break;
+        }
+    }
+
+    public void PlayMenu(Menu sound)
+    {
+        AudioClip audioResource = null;
+        switch (sound)
+        {
+            case Menu.Press:
+                audioResource = _clickBtn;
+                break;
+            case Menu.OpenBook:
+                audioResource = _openBook;
+                break;
+            case Menu.CloseBook:
+                audioResource = _closeBook;
+                break;
+
+        }
+
+        // One AudioSource is free ?
+        foreach (AudioSource soundSource in m_MenusSource)
         {
             if (soundSource.isPlaying) continue;
 
@@ -240,7 +313,7 @@ public class SoundManager : MonoBehaviour
         return (int)(20 * Mathf.Log10(volume / 100f));
     }
 
-    void SetVolume(Type type, int volume)
+    public void SetVolume(Type type, int volume)
     {
         int dB = CalcVolumeToDecibel(volume);
         switch (type)
@@ -256,6 +329,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case Type.Voice:
                 mixer.SetFloat("Voice", dB);
+                break;
+            case Type.Menu:
+                mixer.SetFloat("UI", dB);
                 break;
         }
     }
