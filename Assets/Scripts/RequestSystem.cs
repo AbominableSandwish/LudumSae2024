@@ -80,7 +80,8 @@ public class RequestSystem : MonoBehaviour
 
     public void SpellSucess(resolution spell)
     {
-        _particleSystem.Play();
+        if(_particleSystem)
+            _particleSystem.Play();
         GameObject currentPeep = _characterManager.CurrentPeep;
         //Existing spell
         if(_requests.Count != 0) {
@@ -114,7 +115,8 @@ public class RequestSystem : MonoBehaviour
 
     public void SpellFailure()
     {
-        _particleSystem.Play();
+        if(_particleSystem)
+            _particleSystem.Play();
         if (_requests.Count != 0)
         {
             //Failure
