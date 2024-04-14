@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 
@@ -44,8 +45,8 @@ public class RequestSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameObject.Find("ScoreSystem"))
-            _score = GameObject.Find("ScoreSystem").GetComponent<scoreSystem>();
+        if (GameObject.Find("score"))
+            _score = GameObject.Find("score").GetComponent<scoreSystem>();
         if (GameObject.Find("SpellManager"))
             _spellManager = GameObject.Find("SpellManager").GetComponent<SpellManager>();
         if (GameObject.Find("Peeps"))
@@ -114,5 +115,9 @@ public class RequestSystem : MonoBehaviour
 
         if (_requests.Count == 1)
             GameObject.Find("SpeechBubble").GetComponent<UIBubble>().SetComplaints(spells[rdm].resolution);
+        if (_requests.Count == 10)
+        {
+            SceneManager.LoadScene("MenuScore");
+        }
     }
 }
