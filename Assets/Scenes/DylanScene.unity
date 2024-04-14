@@ -3401,6 +3401,11 @@ MonoBehaviour:
   _score: 0
   _ComboScore: 0
   _NumbreComboScore: 1
+  _maxFaillure: 0
+  _maxSucess: 0
+  _maxCombo: 0
+  _maxCombofinal: 0
+  _peep: 0
 --- !u!4 &1297866581
 Transform:
   m_ObjectHideFlags: 0
