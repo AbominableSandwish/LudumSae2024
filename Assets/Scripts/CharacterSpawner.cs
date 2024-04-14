@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CharacterSpawner : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _body;
-    [SerializeField] private SpriteRenderer _scratchMarks;
+    [SerializeField] private SpriteRenderer _spellResult;
     [SerializeField] private SpriteRenderer _accessory;
     [SerializeField] private SpriteRenderer _accessory2;
     [SerializeField] private List<Sprite> _accessoriesList;
@@ -16,7 +17,7 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private List<Sprite> _sadEyesList;
     [SerializeField] private Sprite _happyEyes;
 
-    public SpriteRenderer ScratchMarks => _scratchMarks;
+    public SpriteRenderer SpellResult => _spellResult;
     public SpriteRenderer Eyes => _eyes;
     public List<Sprite> SadEyesList => _sadEyesList;
     public Sprite HappyEyes => _happyEyes;

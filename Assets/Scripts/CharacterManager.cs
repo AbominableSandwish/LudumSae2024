@@ -40,7 +40,7 @@ public class CharacterManager : MonoBehaviour
             {
                 peep.GetComponent<CharacterSpawner>().Eyes.sprite = peep.GetComponent<CharacterSpawner>()
                     .SadEyesList[Random.Range(0, peep.GetComponent<CharacterSpawner>().SadEyesList.Count)];
-                peep.GetComponent<CharacterSpawner>().ScratchMarks.gameObject.SetActive(true);
+                peep.GetComponent<CharacterSpawner>().SpellResult.gameObject.SetActive(true);
                 peep.GetComponent<Animator>().Play("Exit");
             }
             else

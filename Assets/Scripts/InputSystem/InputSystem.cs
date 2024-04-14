@@ -11,6 +11,8 @@ public class InputSystem : MonoBehaviour
     private GameManager _gameManager;
     private List<Directions> _enteredInputs = new List<Directions>();
 
+    bool _canSpell = true;
+
     public List<Directions> EnteredInputs
     {
         get => _enteredInputs;
@@ -25,7 +27,7 @@ public class InputSystem : MonoBehaviour
     
     private void Start()
     { 
-        _ui = GameObject.Find("UI").GetComponent<InGame>();
+        _ui = GameObject.Find("UIArrowSpell").GetComponent<InGame>();
         //Subscribe to Button type actions
         _playerControls.Player.Pause.performed += _ => Pause();
         _playerControls.Player.Up.performed += _ => Up();
@@ -52,25 +54,47 @@ public class InputSystem : MonoBehaviour
     
     private void Up()
     {
-        _enteredInputs.Add(Directions.Up);
-        _ui.NewInput(Directions.Up);
+        if (_canSpell)
+        {
+            _enteredInputs.Add(Directions.Up);
+            _ui.NewInput(Directions.Up);
+        }
     }
     
     private void Right()
     {
-        _enteredInputs.Add(Directions.Right);
-        _ui.NewInput(Directions.Right);
+        if(_canSpell)
+        {
+            _enteredInputs.Add(Directions.Right);
+            _ui.NewInput(Directions.Right);
+        }
     }
     
     private void Down()
     {
-        _enteredInputs.Add(Directions.Down);
-        _ui.NewInput(Directions.Down);
+        if (_canSpell)
+        {
+            _enteredInputs.Add(Directions.Down);
+            _ui.NewInput(Directions.Down);
+        }
     }
     
     private void Left()
     {
-        _enteredInputs.Add(Directions.Left);
-        _ui.NewInput(Directions.Left);
+        if (_canSpell)
+        {
+            _enteredInputs.Add(Directions.Left);
+            _ui.NewInput(Directions.Left);
+        }   
+    }
+
+    public void InputSpellLock()
+    {
+        _canSpell = false;
+    }
+
+    public void InputSpellUnLock()
+    {
+        _canSpell = true;
     }
 }
