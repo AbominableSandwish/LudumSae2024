@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class AboutManager : MonoBehaviour
 {
-    public void LoadScene(string name)
+    public void LoadScene()
     {
-        GameObject.Find("SceneManager").GetComponent<LevelLoader>().LoadScene(name);
-        Destroy(GameObject.Find("SceneSystem"));
+        SceneManager.LoadScene("MainMenu");
     }
 }
