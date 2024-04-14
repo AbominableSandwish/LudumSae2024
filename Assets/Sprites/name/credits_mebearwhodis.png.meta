@@ -431,7 +431,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      credits_mebearwhodis_0: 5283453821111582875
+      credits_mebearwhodis_1: 6954993090922575069
+      credits_mebearwhodis_10: 3729223317812390676
+      credits_mebearwhodis_11: -3412417404182376801
+      credits_mebearwhodis_12: 3910992648389222454
+      credits_mebearwhodis_2: 2590693880125053073
+      credits_mebearwhodis_3: -2404264248284686110
+      credits_mebearwhodis_4: -4790135580453232913
+      credits_mebearwhodis_5: -6255047824658934234
+      credits_mebearwhodis_6: -3072083543823039424
+      credits_mebearwhodis_7: -3979119759079255360
+      credits_mebearwhodis_8: 6369320080802118634
+      credits_mebearwhodis_9: 5423555994084346775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -383,7 +383,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      credit_Dylan von Arx_0: 7663416311405038938
+      credit_Dylan von Arx_1: -8789796093792523272
+      credit_Dylan von Arx_10: 1373622965886638918
+      credit_Dylan von Arx_2: 9099779817064039720
+      credit_Dylan von Arx_3: -4853805875247393984
+      credit_Dylan von Arx_4: 3915710863122918906
+      credit_Dylan von Arx_5: 5211384593947954795
+      credit_Dylan von Arx_6: 5126369838049855884
+      credit_Dylan von Arx_7: -8670797103187849732
+      credit_Dylan von Arx_8: 6790249101189630610
+      credit_Dylan von Arx_9: -6857738209406161394
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

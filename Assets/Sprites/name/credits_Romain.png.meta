@@ -287,7 +287,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      credits_Romain_0: -1815790743091751592
+      credits_Romain_1: -2520062782451175893
+      credits_Romain_2: -7878790151508666733
+      credits_Romain_3: 3974960539955360612
+      credits_Romain_4: -396211594750476028
+      credits_Romain_5: 4518759611164018929
+      credits_Romain_6: 7523216367902532465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -239,7 +239,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      credit_Simon_0: 5477186611258534911
+      credit_Simon_1: 4872290885393984007
+      credit_Simon_2: -95400615612142005
+      credit_Simon_3: -7490766337691541765
+      credit_Simon_4: -5954652094219642354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

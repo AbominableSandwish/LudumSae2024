@@ -263,7 +263,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      credit_Jayson_0: 3085226196613095167
+      credit_Jayson_1: 3958203318430896716
+      credit_Jayson_2: -6989171064737507928
+      credit_Jayson_3: -9044392433144961368
+      credit_Jayson_4: 5048912157591035275
+      credit_Jayson_5: -7194237756847263319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
