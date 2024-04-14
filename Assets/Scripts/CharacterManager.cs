@@ -21,17 +21,23 @@ public class CharacterManager : MonoBehaviour
 
     public void NewPeep()
     {
-        GameObject peep = PeepsFree.Dequeue();
-        peep.SetActive(true);
-        peep.transform.localPosition += new Vector3(0, 10, 0);
-        peep.GetComponent<CharacterSpawner>().SpawnCharacter();
-        peep.GetComponent<Animator>().Play("Enter");
-        PeepsUsed.Enqueue(peep);
+        if (PeepsFree.Count != 0)
+        {
+            GameObject peep = PeepsFree.Dequeue();
+            peep.SetActive(true);
+            peep.transform.localPosition += new Vector3(0, 10, 0);
+            peep.GetComponent<CharacterSpawner>().SpawnCharacter();
+            peep.GetComponent<Animator>().Play("Enter");
+            PeepsUsed.Enqueue(peep);
+        }
     }
     public void FreePeep()
     {
-        GameObject peep = PeepsUsed.Dequeue();
-        peep.GetComponent<Animator>().Play("Exit");
-        PeepsFree.Enqueue(peep);
+        if (PeepsUsed.Count != 0)
+        {
+            GameObject peep = PeepsUsed.Dequeue();
+            peep.GetComponent<Animator>().Play("Exit");
+            PeepsFree.Enqueue(peep);
+        }
     }
 }
