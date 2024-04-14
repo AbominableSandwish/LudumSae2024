@@ -83,6 +83,9 @@ public class RequestSystem : MonoBehaviour
             _characterManager.FreePeep();
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
+
+            if (_requests.Count != 0)
+                GameObject.Find("SpeechBubble").GetComponent<UIBubble>().SetComplaints(_requests[0]._resolution);
         }
     }
 
@@ -95,6 +98,9 @@ public class RequestSystem : MonoBehaviour
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
             _characterManager.FreePeep();
+            
+            if (_requests.Count != 0)
+                GameObject.Find("SpeechBubble").GetComponent<UIBubble>().SetComplaints(_requests[0]._resolution);
         }
     }
     public void NewRequest()
@@ -104,5 +110,8 @@ public class RequestSystem : MonoBehaviour
         int rdm = Random.Range(0, spells.Count);
         _requests.Add(new Request(spells[rdm].resolution));
         NbrRequest = _requests.Count;
+
+        if (_requests.Count == 1)
+            GameObject.Find("SpeechBubble").GetComponent<UIBubble>().SetComplaints(spells[rdm].resolution);
     }
 }

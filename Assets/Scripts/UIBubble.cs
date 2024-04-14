@@ -8,8 +8,8 @@ public class UIBubble : MonoBehaviour
 
     [SerializeField] List<Sprite> _complaints;
 
-    void SetComplaints()
+    public void SetComplaints(RequestSystem.resolution reso)
     {
-
+        _renderer.sprite = _complaints[(int)reso];
     }
 }
