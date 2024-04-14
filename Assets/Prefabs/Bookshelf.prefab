@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 7772341365247935936}
   - component: {fileID: 5994880187585459502}
   m_Layer: 0
-  m_Name: armoire
+  m_Name: Bookshelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,7 +366,7 @@ Transform:
   m_GameObject: {fileID: 1569443404975470779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3, y: 1.46, z: -0.18860346}
+  m_LocalPosition: {x: 8.58, y: -3.3661113, z: -0.18860346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -148,7 +148,7 @@ public class SpellManager : MonoBehaviour
     void Start()
     {
 
-        _ui = GameObject.Find("UI").GetComponent<InGame>();
+        _ui = GameObject.Find("UIArrowSpell").GetComponent<InGame>();
         _inputmanager = GameObject.Find("InputSystem").GetComponent<InputSystem>();
         _requestSystem = GameObject.Find("RequestSystem").GetComponent<RequestSystem>();
         _librarysystem = GameObject.Find("Bookshelf").GetComponent<LibrarySystem>();
@@ -257,6 +257,9 @@ public class SpellManager : MonoBehaviour
                     spellsDetected.Clear();
                     isSearch = false;
                     _ui.Action();
+
+                    _inputmanager.InputSpellLock();
+                    GameObject.Find("PanelArrows").GetComponent<PanelSpellUi>().Success();
                     return;
                 }
             }
@@ -274,6 +277,8 @@ public class SpellManager : MonoBehaviour
                 }
                 isSearch = false;
                 _ui.Clear();
+                _inputmanager.InputSpellLock();
+                GameObject.Find("PanelArrows").GetComponent<PanelSpellUi>().Failure();
                 return;
             }
         }
