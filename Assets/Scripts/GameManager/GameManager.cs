@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Init State");
                 break;
             case GameState.Menu:
+                SceneManager.LoadScene("MainMenu");
                 break;
             case GameState.Game:
                 break;
