@@ -12,6 +12,7 @@ public class RequestSystem : MonoBehaviour
     CharacterManager _characterManager;
     SpellManager _spellManager;
     SoundManager _soundManager;
+    private ParticleSystem _particleSystem;
 
 
     public class Request
@@ -54,10 +55,10 @@ public class RequestSystem : MonoBehaviour
             _characterManager = GameObject.Find("Peeps").GetComponent<CharacterManager>();
         if (GameObject.Find("SoundManager"))
             _soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        if (GameObject.Find("FeatherExplosion"))
+            _particleSystem = GameObject.Find("FeatherExplosion").GetComponent<ParticleSystem>();
         _requests = new List<Request>();
 
-       
-      
     }
 
     // Update is called once per frame
@@ -79,6 +80,7 @@ public class RequestSystem : MonoBehaviour
 
     public void SpellSucess(resolution spell)
     {
+        _particleSystem.Play();
         GameObject currentPeep = _characterManager.CurrentPeep;
         //Existing spell
         if(_requests.Count != 0) {
@@ -112,6 +114,7 @@ public class RequestSystem : MonoBehaviour
 
     public void SpellFailure()
     {
+        _particleSystem.Play();
         if (_requests.Count != 0)
         {
             //Failure
