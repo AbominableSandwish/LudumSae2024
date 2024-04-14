@@ -11,6 +11,7 @@ public class RequestSystem : MonoBehaviour
 {
     CharacterManager _characterManager;
     SpellManager _spellManager;
+    SoundManager _soundManager;
 
 
     public class Request
@@ -51,6 +52,8 @@ public class RequestSystem : MonoBehaviour
             _spellManager = GameObject.Find("SpellManager").GetComponent<SpellManager>();
         if (GameObject.Find("Peeps"))
             _characterManager = GameObject.Find("Peeps").GetComponent<CharacterManager>();
+        if (GameObject.Find("SoundManager"))
+            _soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         _requests = new List<Request>();
 
        
@@ -60,14 +63,25 @@ public class RequestSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_soundManager)
+        {
+            if (_requests.Count >= 8)
+            {
+                _soundManager.SetPitchMusic(3);
+            }
 
+            if (_requests.Count < 8)
+            {
+                _soundManager.SetPitchMusic(1);
+            }
+        }
     }
 
     public void SpellSucess(resolution spell)
     {
         if(_requests.Count != 0) {
             //Sucess
-            if (_requests[0]._resolution == resolution.Hurt)
+            if (_requests[0]._resolution == spell)
             {
                 Debug.Log("Success");
                 _score.SucessScore(_requests[0]._difficulty);
@@ -77,7 +91,7 @@ public class RequestSystem : MonoBehaviour
 
            
             //Failure
-            if (_requests[0]._resolution != resolution.Hurt)
+            if (_requests[0]._resolution != spell)
             {
                 _score.FailureScore();
                 _characterManager.FreePeep(false);

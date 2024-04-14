@@ -339,7 +339,7 @@ public class SoundManager : MonoBehaviour
     public void SetPitchMusic(int pitch)
     {
 
-        mixer.SetFloat("PitchMusix", pitch);
+        mixer.SetFloat("PitchMusic", pitch);
 
     }
 }
