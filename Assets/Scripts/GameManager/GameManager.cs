@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
             case GameState.Game:
                 break;
             case GameState.GameOver:
+                SceneManager.LoadScene("MenuScore");
                 break;
         }
     }
