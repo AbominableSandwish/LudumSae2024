@@ -58,6 +58,7 @@ public class RequestSystem : MonoBehaviour
                 Debug.Log("Success");
                 _score.SucessScore(_requests[0]._difficulty);
                 
+                _characterManager.FreePeep(true);
             }
 
            
@@ -65,9 +66,9 @@ public class RequestSystem : MonoBehaviour
             if (_requests[0]._resolution != resolution.Hurt)
             {
                 _score.FailureScore();
+                _characterManager.FreePeep(false);
             }
 
-            _characterManager.FreePeep();
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
         }
@@ -81,7 +82,7 @@ public class RequestSystem : MonoBehaviour
             _score.FailureScore();
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
-            _characterManager.FreePeep();
+            _characterManager.FreePeep(false);
         }
     }
     public void NewRequest()
