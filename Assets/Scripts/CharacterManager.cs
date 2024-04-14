@@ -41,17 +41,16 @@ public class CharacterManager : MonoBehaviour
        {
           currentPeep.GetComponent<CharacterSpawner>().Eyes.sprite = currentPeep.GetComponent<CharacterSpawner>()
                   .SadEyesList[Random.Range(0, currentPeep.GetComponent<CharacterSpawner>().SadEyesList.Count)];
-          currentPeep.GetComponent<CharacterSpawner>().SpellResult.gameObject.SetActive(true);
-
+          
           currentPeep.GetComponent<Animator>().Play("Exit");
-          }
-          else
-          {
-          currentPeep.GetComponent<CharacterSpawner>().Eyes.sprite = currentPeep.GetComponent<CharacterSpawner>().HappyEyes;
-          currentPeep.GetComponent<Animator>().Play("HappyPeep");
-          }
-          PeepsFree.Enqueue(currentPeep);
-          currentPeep = null;
+       }
+       else
+       {
+           currentPeep.GetComponent<CharacterSpawner>().Eyes.sprite = currentPeep.GetComponent<CharacterSpawner>().HappyEyes;
+           currentPeep.GetComponent<Animator>().Play("HappyPeep");
+       }
+       PeepsFree.Enqueue(currentPeep);
+       currentPeep = null;
 
        if (PeepsWaiting.Count != 0)
            Peep();

@@ -64,18 +64,20 @@ public class RequestSystem : MonoBehaviour
 
     public void SpellSucess(resolution spell)
     {
+        //Existing spell
         if(_requests.Count != 0) {
-            //Sucess
+            //Right spell
             if (_requests[0]._resolution == resolution.Hurt)
             {
                 Debug.Log("Success");
                 _score.SucessScore(_requests[0]._difficulty);
                 
                 _characterManager.FreePeep(true);
+                
             }
 
            
-            //Failure
+            //Wrong spell
             if (_requests[0]._resolution != resolution.Hurt)
             {
                 _score.FailureScore();
