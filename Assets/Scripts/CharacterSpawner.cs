@@ -30,6 +30,13 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private Sprite _metamorphosisSuccess1;
     [SerializeField] private Sprite _metamorphosisSuccess2;
 
+    SoundManager _soundManager;
+
+    private void Start()
+    {
+        _soundManager = FindFirstObjectByType<SoundManager>();
+    }
+
     public SpriteRenderer SpellResult1 => _spellResult1;
 
     public void SpawnCharacter()
@@ -62,6 +69,7 @@ public class CharacterSpawner : MonoBehaviour
                 switch (resolution)
                 {
                     case RequestSystem.resolution.metamorphosis:
+                       
                         _spellResult1.sprite = _metamorphosisSuccess1;
                         _spellResult2.sprite = _metamorphosisSuccess2;
                         break;
@@ -70,6 +78,10 @@ public class CharacterSpawner : MonoBehaviour
                         _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Invisible:
+                        if (_soundManager)
+                        {
+                            _soundManager.PlaySound(SoundManager.Sound.SuccesStealth);
+                        }
                         _spellResult1.sprite = null;
                         _spellResult2.sprite = null;
                         _body.sprite = null;
@@ -85,6 +97,10 @@ public class CharacterSpawner : MonoBehaviour
                         _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Pickle:
+                        if (_soundManager)
+                        {
+                            _soundManager.PlaySound(SoundManager.Sound.OpenPickle);
+                        }
                         _spellResult1.sprite = null;
                         _spellResult2.sprite = null;
                         break;
@@ -96,14 +112,26 @@ public class CharacterSpawner : MonoBehaviour
                 switch (resolution)
                 {
                     case RequestSystem.resolution.metamorphosis:
+                        if (_soundManager)
+                        {
+                            _soundManager.PlaySound(SoundManager.Sound.Demon);
+                        }
                         _spellResult1.sprite = _metamorphosisFailure;
                         _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Hurt:
+                        if (_soundManager)
+                        {
+                            _soundManager.PlaySound(SoundManager.Sound.Burning);
+                        }
                         _spellResult1.sprite = _defaultFailure;
                         _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Invisible:
+                        if (_soundManager)
+                        {
+                            _soundManager.PlaySound(SoundManager.Sound.FailureStealth);
+                        }
                         _spellResult1.sprite = _invisibilityFailure1;
                         _spellResult2.sprite = _invisibilityFailure2;
                         break;

@@ -92,8 +92,7 @@ public class RequestSystem : MonoBehaviour
                 _characterManager.FreePeep(true);
                 
             }
-
-           
+   
             //Failure
             if (_requests[0]._resolution != spell)
             {
