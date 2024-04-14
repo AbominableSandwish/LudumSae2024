@@ -79,6 +79,7 @@ public class RequestSystem : MonoBehaviour
 
     public void SpellSucess(resolution spell)
     {
+        GameObject currentPeep = _characterManager.CurrentPeep;
         //Existing spell
         if(_requests.Count != 0) {
             //Sucess
@@ -87,15 +88,17 @@ public class RequestSystem : MonoBehaviour
                 Debug.Log("Success");
                 _score.SucessScore(_requests[0]._difficulty);
                 
+                currentPeep.GetComponent<CharacterSpawner>().SetSpellResult(spell, true);
                 _characterManager.FreePeep(true);
                 
             }
-
-           
+   
             //Failure
             if (_requests[0]._resolution != spell)
             {
                 _score.FailureScore();
+                
+                currentPeep.GetComponent<CharacterSpawner>().SetSpellResult(spell, false);
                 _characterManager.FreePeep(false);
             }
 

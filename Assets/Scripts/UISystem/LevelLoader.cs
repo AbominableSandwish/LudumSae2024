@@ -13,11 +13,11 @@ public class LevelLoader : MonoBehaviour
 
     public void ButtonLoadScene(string sceneName)
     {
-        GameObject soundManager = GameObject.Find("SoundManager");
+        SoundManager soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 
         if (soundManager)
         {
-            //soundManager.GetComponent<SoundManager>().PlaySound(SoundManager.Sound.Button);
+            soundManager.PlayMenu(SoundManager.Menu.Press);
         }
 
         LoadScene(sceneName);
@@ -51,16 +51,22 @@ public class LevelLoader : MonoBehaviour
             GameObject.Find("SoundManager").GetComponent<SoundManager>().PlayMusic(SoundManager.Music.ScoreMenu);
         }
 
+        SoundManager soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        if (soundManager)
+        {
+            soundManager.PlayMenu(SoundManager.Menu.Press);
+        }
+
         SceneManager.LoadScene(sceneName);
     }
 
     public void ExitGame()
     {
-        GameObject soundManager = GameObject.Find("SoundManager");
+        SoundManager soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); ;
 
         if (soundManager)
         {
-            //soundManager.GetComponent<SoundManager>().PlaySound(SoundManager.Sound.Button);
+            soundManager.PlayMenu(SoundManager.Menu.Press);
         }
 
         Application.Quit();

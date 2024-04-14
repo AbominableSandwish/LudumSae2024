@@ -9,6 +9,9 @@ public class CharacterManager : MonoBehaviour
     [SerializeField] Queue<GameObject> PeepsFree;
     Queue<GameObject> PeepsWaiting;
     GameObject currentPeep;
+
+    public GameObject CurrentPeep => currentPeep;
+    
     // Start is called before the first frame update
     void Start()
     {
