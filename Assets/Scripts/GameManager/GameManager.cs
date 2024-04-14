@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
+    private void Start()
+    {
+        _reputation = GetComponent<Reputation>();
+    }
+
     private void Update()
     {
         Time.timeScale = _isPaused ? 0 : 1;

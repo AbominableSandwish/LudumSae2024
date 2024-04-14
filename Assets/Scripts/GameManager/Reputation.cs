@@ -9,13 +9,20 @@ public class Reputation : MonoBehaviour
     private int _queueSize;
     private int _maxQueueSize;
     private GameManager _gameManager;
+    // private bool _coroutineRunning = true;
     
     public float ReputationValue
     {
         get => _reputationValue;
         set => _reputationValue = value;
     }
-    
+
+    // public bool CoroutineRunning
+    // {
+    //     get => _coroutineRunning;
+    //     set => _coroutineRunning = value;
+    // }
+
     private void Awake()
     {
         _gameManager = FindFirstObjectByType<GameManager>();
@@ -28,5 +35,18 @@ public class Reputation : MonoBehaviour
         {
             _gameManager.SetGameState(GameManager.GameState.GameOver);
         }
+
+        // if (!_coroutineRunning)
+        // {
+        //     StartCoroutine(LoseReputation());
+        // }
     }
+    //
+    // private IEnumerator LoseReputation()
+    // {
+    //     _coroutineRunning = true;
+    //     yield return new WaitForSeconds(1);
+    //     _reputationValue -= 0.01f;
+    //     _coroutineRunning = false;
+    // }
 }
