@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
     [SerializeField] List<GameObject> Peeps;
     [SerializeField] Queue<GameObject> PeepsFree;
-    Queue<GameObject> PeepsUsed;
+    Queue<GameObject> PeepsWaiting;
+    GameObject currentPeep;
     // Start is called before the first frame update
     void Start()
     {
         PeepsFree = new Queue<GameObject>();
-        PeepsUsed = new Queue<GameObject>();
+        PeepsWaiting = new Queue<GameObject>();
 
         foreach (GameObject p in Peeps) {
             PeepsFree.Enqueue(p);
@@ -24,31 +26,44 @@ public class CharacterManager : MonoBehaviour
         if (PeepsFree.Count != 0)
         {
             GameObject peep = PeepsFree.Dequeue();
-            peep.SetActive(true);
-            peep.transform.localPosition += new Vector3(0, 10, 0);
-            peep.GetComponent<CharacterSpawner>().SpawnCharacter();
-            peep.GetComponent<Animator>().Play("Enter");
-            PeepsUsed.Enqueue(peep);
+            PeepsWaiting.Enqueue(peep);
+
+            if(currentPeep == null)
+            {
+                Peep();
+            }
         }
     }
+
     public void FreePeep(bool success)
     {
-        if (PeepsUsed.Count != 0)
-        {
-            GameObject peep = PeepsUsed.Dequeue();
-            if (!success)
-            {
-                peep.GetComponent<CharacterSpawner>().Eyes.sprite = peep.GetComponent<CharacterSpawner>()
-                    .SadEyesList[Random.Range(0, peep.GetComponent<CharacterSpawner>().SadEyesList.Count)];
-                peep.GetComponent<CharacterSpawner>().ScratchMarks.gameObject.SetActive(true);
-                peep.GetComponent<Animator>().Play("Exit");
-            }
-            else
-            {
-                peep.GetComponent<CharacterSpawner>().Eyes.sprite = peep.GetComponent<CharacterSpawner>().HappyEyes;
-                peep.GetComponent<Animator>().Play("HappyPeep");
-            }
-            PeepsFree.Enqueue(peep);
-        }
+       if (currentPeep != null)
+       {
+          currentPeep.GetComponent<CharacterSpawner>().Eyes.sprite = currentPeep.GetComponent<CharacterSpawner>()
+                  .SadEyesList[Random.Range(0, currentPeep.GetComponent<CharacterSpawner>().SadEyesList.Count)];
+          currentPeep.GetComponent<CharacterSpawner>().ScratchMarks.gameObject.SetActive(true);
+
+          currentPeep.GetComponent<Animator>().Play("Exit");
+          }
+          else
+          {
+          currentPeep.GetComponent<CharacterSpawner>().Eyes.sprite = currentPeep.GetComponent<CharacterSpawner>().HappyEyes;
+          currentPeep.GetComponent<Animator>().Play("HappyPeep");
+          }
+          PeepsFree.Enqueue(currentPeep);
+          currentPeep = null;
+
+       if (PeepsWaiting.Count != 0)
+           Peep();
+    }
+
+    public void Peep()
+    {
+        GameObject peep = PeepsWaiting.Dequeue();
+        peep.SetActive(true);
+        peep.transform.localPosition += new Vector3(0, 10, 0);
+        peep.GetComponent<CharacterSpawner>().SpawnCharacter();
+        peep.GetComponent<Animator>().Play("Enter");
+        currentPeep = peep;
     }
 }
