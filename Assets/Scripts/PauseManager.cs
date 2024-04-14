@@ -63,4 +63,10 @@ public class PauseManager : MonoBehaviour
         IsParametre = !IsParametre;
     }
 
+    public void ReturnMenu()
+    {
+        GameObject.Find("SceneManager").GetComponent<LevelLoader>().LoadScene("MainMenu");
+
+    }
+
 }

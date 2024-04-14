@@ -2063,6 +2063,7 @@ GameObject:
   - component: {fileID: 1684126698}
   - component: {fileID: 1684126697}
   - component: {fileID: 1684126696}
+  - component: {fileID: 1684126700}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2146,9 +2147,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1684126696}
-        m_TargetAssemblyTypeName: truc_nul, Assembly-CSharp
-        m_MethodName: truc_nul1
+      - m_Target: {fileID: 1684126700}
+        m_TargetAssemblyTypeName: BtnMenu, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2196,6 +2197,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684126694}
   m_CullTransparentMesh: 1
+--- !u!114 &1684126700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684126694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d73f9dcd980c043bc6c074cdef3e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2142292057
 GameObject:
   m_ObjectHideFlags: 0

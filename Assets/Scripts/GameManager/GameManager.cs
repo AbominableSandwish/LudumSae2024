@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
         {
             _counterTime += Time.deltaTime;
             if(_counterTime >= TIME_TO_NEXT_LEVEL) {
-                if()
                 GameObject.FindFirstObjectByType<SpellManager>().UnlockNewSpell();
                 GameObject.FindFirstObjectByType<EvenementSystem>().AddNewTimer();
                 _counterTime = 0;

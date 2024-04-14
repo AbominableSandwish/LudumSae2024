@@ -255,6 +255,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1991320566}
+    - target: {fileID: 4349723465184017892, guid: b624a05dccb05884d9fc361308ee8702, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5485651468781418745, guid: b624a05dccb05884d9fc361308ee8702, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -562,6 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGameState: 0
+  _counterTime: 0
 --- !u!1001 &541154107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2258,14 +2263,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 809786801236820685, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
+      propertyPath: m_text
+      value: Close
+      objectReference: {fileID: 0}
     - target: {fileID: 1176700483586532631, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
       propertyPath: m_Name
       value: BookSpell
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281863378433981184, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601386043992222824, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886658773208666556, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8267393833339448573, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1991320566}
+    - target: {fileID: 8267393833339448573, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8567633144939262178, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8567633144939262178, guid: 9f80a3756a109b2409b9354a06252a82, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 9039913736544270448, guid: 0db3959cb9829de4fbed8c4b4ac16876, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

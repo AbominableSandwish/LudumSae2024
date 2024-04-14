@@ -31,7 +31,10 @@ public class LevelLoader : MonoBehaviour
                 Destroy(_canvasPause);
             if( GameObject.Find("GameManager"))
                 Destroy(GameObject.Find("GameManager"));
-            if(GameObject.Find("SoundManager"))
+            if (GameObject.Find("score"))
+                Destroy(GameObject.Find("ScoreSystem"));
+
+            if (GameObject.Find("SoundManager"))
                 GameObject.Find("SoundManager").GetComponent<SoundManager>().PlayMusic(SoundManager.Music.MainMenu);
         }
 
