@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d7e6a37a479cef4ea9f28c0cfce9aa5
+guid: 751a46f0482913a4b90ff13e2e4bddfc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5602719182251616001
-    second: oeuf_v1_0
+      213: -8862250765585670749
+    second: pentagreMME_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 140
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oeuf_v1_0
+      name: pentagreMME_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 5
-        width: 109
-        height: 140
+        x: 1
+        y: 0
+        width: 620
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff810a596942f32b0800000000000000
-      internalID: -5602719182251616001
+      spriteID: 3ad15d602e5f20580800000000000000
+      internalID: -8862250765585670749
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      oeuf_v1_0: -5602719182251616001
+      pentagreMME_0: -8862250765585670749
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
