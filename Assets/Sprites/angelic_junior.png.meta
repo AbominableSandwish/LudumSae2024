@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 751a46f0482913a4b90ff13e2e4bddfc
+guid: 604fabf24ff62664c9c7c5f602ab78f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8862250765585670749
-    second: pentagreMME_0
+      213: 6750718982532481322
+    second: angelic_junior_0
+  - first:
+      213: -3268934427534172338
+    second: angelic_junior_1
+  - first:
+      213: -285374798980859712
+    second: angelic_junior_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pentagreMME_0
+      name: angelic_junior_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 620
-        height: 410
+        x: 24
+        y: 234
+        width: 128
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +120,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ad15d602e5f20580800000000000000
-      internalID: -8862250765585670749
+      spriteID: a21c554d52f5fad50800000000000000
+      internalID: 6750718982532481322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelic_junior_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 138
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fd7cc257962a2d0800000000000000
+      internalID: -3268934427534172338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelic_junior_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 94
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8b5eed1252a0cf0800000000000000
+      internalID: -285374798980859712
       vertices: []
       indices: 
       edges: []
@@ -123,15 +171,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      pentagreMME_0: -8862250765585670749
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

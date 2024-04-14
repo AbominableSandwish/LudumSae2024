@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 751a46f0482913a4b90ff13e2e4bddfc
+guid: 1fd88b0096ac1734f8d7a2f1714c78f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8862250765585670749
-    second: pentagreMME_0
+      213: 5362766978259807417
+    second: evil_junior_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pentagreMME_0
+      name: evil_junior_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 620
-        height: 410
+        x: 32
+        y: 14
+        width: 120
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ad15d602e5f20580800000000000000
-      internalID: -8862250765585670749
+      spriteID: 9bcee5057206c6a40800000000000000
+      internalID: 5362766978259807417
       vertices: []
       indices: 
       edges: []
@@ -123,15 +123,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      pentagreMME_0: -8862250765585670749
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
