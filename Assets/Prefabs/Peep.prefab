@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 6408199589293629680}
   - component: {fileID: 8177876201160235829}
   m_Layer: 0
-  m_Name: ScratchMarks
+  m_Name: SpellResult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

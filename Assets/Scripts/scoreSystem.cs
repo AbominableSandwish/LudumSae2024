@@ -24,6 +24,11 @@ public class scoreSystem : MonoBehaviour
     public float Score => _score;
 
 
+    [SerializeField] private GameObject _oeuf;
+    [SerializeField] private GameObject _juniorMalefique;
+    [SerializeField] private GameObject _JuniorAngelique;
+
+
     void Start()
     {
         
@@ -32,7 +37,15 @@ public class scoreSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (_maxCombo >= 20)
+        {
+            JuniorAnge();
+        }
+
+        if (_maxFaillure >= 20)
+        {
+            JuniorMalefique();
+        }
     }
 
 
@@ -104,6 +117,18 @@ public class scoreSystem : MonoBehaviour
         _peep++;
         _NumbreComboScore = 1;
         
+    }
+
+    private void JuniorAnge()
+    {
+        _oeuf.SetActive(false);
+        _JuniorAngelique.SetActive(true);
+    }
+    
+    private void JuniorMalefique()
+    {
+        _oeuf.SetActive(false);
+        _juniorMalefique.SetActive(true);
     }
     
     
