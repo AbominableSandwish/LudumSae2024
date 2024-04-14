@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: cec4867f746855846b459dc3942b399f
+guid: 4190c6ffd8b5aad47983b93637bd8867
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7642915719681688644
-    second: feuille_adam_v1_0
+      213: -5287365219225153764
+    second: oreil lapin_0
+  - first:
+      213: -5244254320460571780
+    second: oreil lapin_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,11 +49,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.45, y: 0.05}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,22 +103,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: feuille_adam_v1_0
+      name: oreil lapin_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 7
-        width: 185
-        height: 239
+        x: 16
+        y: 13
+        width: 181
+        height: 185
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbbbf1895a8eee590800000000000000
-      internalID: -7642915719681688644
+      spriteID: c1f4456c8518f96b0800000000000000
+      internalID: -5287365219225153764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oreil lapin_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 24
+        width: 179
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bd3251b7aa837b0800000000000000
+      internalID: -5244254320460571780
       vertices: []
       indices: 
       edges: []
@@ -123,15 +147,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      feuille_adam_v1_0: -7642915719681688644
+      oreil lapin_0: -5287365219225153764
+      oreil lapin_1: -5244254320460571780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

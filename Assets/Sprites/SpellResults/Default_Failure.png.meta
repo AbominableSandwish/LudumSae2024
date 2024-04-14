@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: d1567c29f12b2a74fb6526ffbbbe62e1
+guid: e9bf60c33ebc8bf4487ce5fc24b2bb2b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6739295939584644478
-    second: "D\xE9mon_0"
+      213: -4537258743506133529
+    second: sort_rate_brule_0
   - first:
-      213: 675528493233056518
-    second: "D\xE9mon_1"
+      213: 2212975790101423112
+    second: sort_rate_brule_1
   - first:
-      213: -6010872545862379064
-    second: "D\xE9mon_2"
+      213: -5349843084759443865
+    second: sort_rate_brule_2
   - first:
-      213: 2797460737655870439
-    second: "D\xE9mon_3"
+      213: 2901044682112539277
+    second: sort_rate_brule_3
+  - first:
+      213: -464963546802056847
+    second: sort_rate_brule_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -55,11 +58,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.7}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -84,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,89 +108,123 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "D\xE9mon_0"
+      name: sort_rate_brule_0
       rect:
         serializedVersion: 2
-        x: 92
-        y: 317
-        width: 115
-        height: 178
+        x: 199
+        y: 401
+        width: 71
+        height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e75dc2363f9c68d50800000000000000
-      internalID: 6739295939584644478
+      spriteID: 7ed1843563b6801c0800000000000000
+      internalID: -4537258743506133529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE9mon_1"
+      name: sort_rate_brule_1
       rect:
         serializedVersion: 2
-        x: 315
-        y: 471
-        width: 15
-        height: 9
+        x: 115
+        y: 268
+        width: 67
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60bafc2e595ff5900800000000000000
-      internalID: 675528493233056518
+      spriteID: 804e88991c116be10800000000000000
+      internalID: 2212975790101423112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE9mon_2"
+      name: sort_rate_brule_2
       rect:
         serializedVersion: 2
-        x: 323
-        y: 309
-        width: 78
-        height: 180
+        x: 281
+        y: 267
+        width: 85
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c999b93447159ca0800000000000000
-      internalID: -6010872545862379064
+      spriteID: 76655d02f0a81c5b0800000000000000
+      internalID: -5349843084759443865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE9mon_3"
+      name: sort_rate_brule_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 78
-        height: 215
+        x: 54
+        y: 30
+        width: 187
+        height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e3941528b392d620800000000000000
-      internalID: 2797460737655870439
+      spriteID: d8a9ada94c4924820800000000000000
+      internalID: 2901044682112539277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sort_rate_brule_4
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 32
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1719b5f1e1e1c89f0800000000000000
+      internalID: -464963546802056847
       vertices: []
       indices: 
       edges: []
@@ -195,18 +232,19 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "D\xE9mon_0": 6739295939584644478
-      "D\xE9mon_1": 675528493233056518
-      "D\xE9mon_2": -6010872545862379064
-      "D\xE9mon_3": 2797460737655870439
+      sort_rate_brule_0: -4537258743506133529
+      sort_rate_brule_1: 2212975790101423112
+      sort_rate_brule_2: -5349843084759443865
+      sort_rate_brule_3: 2901044682112539277
+      sort_rate_brule_4: -464963546802056847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

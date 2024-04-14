@@ -319,20 +319,27 @@ public class SoundManager : MonoBehaviour
         switch (type)
         {
             case Type.Master:
-                mixer.SetFloat("Master", dB);
+                mixer.SetFloat("VolumeMaster", dB);
                 break;
             case Type.Music:
-                mixer.SetFloat("Music", dB);
+                mixer.SetFloat("VolumeMusic", dB);
                 break;
             case Type.Sound:
-                mixer.SetFloat("Sound", dB);
+                mixer.SetFloat("VolumeSound", dB);
                 break;
             case Type.Voice:
-                mixer.SetFloat("Voice", dB);
+                mixer.SetFloat("VolumeVoice", dB);
                 break;
             case Type.Menu:
-                mixer.SetFloat("UI", dB);
+                mixer.SetFloat("VolumeUI", dB);
                 break;
         }
+    }
+
+    public void SetPitchMusic(int pitch)
+    {
+
+        mixer.SetFloat("PitchMusic", pitch);
+
     }
 }
