@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 4776132368074452680}
   - component: {fileID: 8046462953263361888}
   m_Layer: 5
-  m_Name: book 2
+  m_Name: bookLens
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6060310534633038104
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -67.5, y: -9.4}
+  m_AnchoredPosition: {x: 434.3, y: 63.200005}
   m_SizeDelta: {x: 161, y: 182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4776132368074452680
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3673446464866942000, guid: b32e1807170013449971caea87938758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e1807170013449971caea87938758, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -197,13 +197,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: lala, Assembly-CSharp
-        m_MethodName: Lala
-        m_Mode: 1
+        m_TargetAssemblyTypeName: BookSpell, Assembly-CSharp
+        m_MethodName: OpenBook
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -329,13 +329,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: lala, Assembly-CSharp
-        m_MethodName: Lala
-        m_Mode: 1
+        m_TargetAssemblyTypeName: BookSpell, Assembly-CSharp
+        m_MethodName: OpenBook
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -349,6 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7772341365247935936}
+  - component: {fileID: 5994880187585459502}
   m_Layer: 0
   m_Name: armoire
   m_TagString: Untagged
@@ -372,6 +373,25 @@ Transform:
   - {fileID: 7530846304145632133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5994880187585459502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569443404975470779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2f7f62cb355eb4588889d21338e290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  books:
+  - {fileID: 2271897970135057391}
+  - {fileID: 493180989076822590}
+  - {fileID: 2425515183898471181}
+  - {fileID: 6869812355854211210}
+  - {fileID: 5871318720676456029}
+  - {fileID: 6402518909283309808}
 --- !u!1 &2271897970135057391
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,12 +404,12 @@ GameObject:
   - component: {fileID: 5167884892379704142}
   - component: {fileID: 6320944462165552042}
   m_Layer: 5
-  m_Name: book 1
+  m_Name: bookPickle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &648970616659150468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -407,7 +427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.3, y: -8.1}
+  m_AnchoredPosition: {x: 480.5, y: 64.5}
   m_SizeDelta: {x: 161, y: 182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5167884892379704142
@@ -438,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3673446464866942000, guid: b32e1807170013449971caea87938758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e1807170013449971caea87938758, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -460,12 +480,12 @@ GameObject:
   - component: {fileID: 8776709654980342553}
   - component: {fileID: 6743933690421888884}
   m_Layer: 5
-  m_Name: book 3
+  m_Name: bookInvisble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2777391729547231586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -483,7 +503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110.6, y: -7.5}
+  m_AnchoredPosition: {x: 478.8, y: -66.8}
   m_SizeDelta: {x: 161, y: 182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8776709654980342553
@@ -514,7 +534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3673446464866942000, guid: b32e1807170013449971caea87938758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e1807170013449971caea87938758, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -645,9 +665,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: lala, Assembly-CSharp
-        m_MethodName: Lala
-        m_Mode: 1
+        m_TargetAssemblyTypeName: BookSpell, Assembly-CSharp
+        m_MethodName: OpenBook
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -777,13 +797,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: lala, Assembly-CSharp
-        m_MethodName: Lala
-        m_Mode: 1
+        m_TargetAssemblyTypeName: BookSpell, Assembly-CSharp
+        m_MethodName: OpenBook
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -800,12 +820,12 @@ GameObject:
   - component: {fileID: 3893424325759436761}
   - component: {fileID: 6342250887665529159}
   m_Layer: 5
-  m_Name: book 5
+  m_Name: bookMetamorphosis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3482426198390248256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -823,7 +843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -199.2, y: -8.1}
+  m_AnchoredPosition: {x: -425, y: -19}
   m_SizeDelta: {x: 161, y: 182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3893424325759436761
@@ -854,7 +874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3673446464866942000, guid: b32e1807170013449971caea87938758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e1807170013449971caea87938758, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -876,12 +896,12 @@ GameObject:
   - component: {fileID: 8227913766682896215}
   - component: {fileID: 7205035556344231321}
   m_Layer: 5
-  m_Name: book 6
+  m_Name: bookHeal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3687643857768892307
 RectTransform:
   m_ObjectHideFlags: 0
@@ -899,7 +919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.9, y: -8.1}
+  m_AnchoredPosition: {x: -468.7, y: -19.000004}
   m_SizeDelta: {x: 161, y: 182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8227913766682896215
@@ -930,7 +950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3673446464866942000, guid: b32e1807170013449971caea87938758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e1807170013449971caea87938758, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -952,12 +972,12 @@ GameObject:
   - component: {fileID: 5100284349390035469}
   - component: {fileID: 3112086711226296098}
   m_Layer: 5
-  m_Name: book 4
+  m_Name: bookTongue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8806338222879845576
 RectTransform:
   m_ObjectHideFlags: 0
@@ -975,7 +995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156.8, y: -6.8}
+  m_AnchoredPosition: {x: 436.40002, y: -65.2}
   m_SizeDelta: {x: 161, y: 182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5100284349390035469
@@ -1006,7 +1026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3673446464866942000, guid: b32e1807170013449971caea87938758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b32e1807170013449971caea87938758, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1137,13 +1157,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: lala, Assembly-CSharp
-        m_MethodName: Lala
-        m_Mode: 1
+        m_TargetAssemblyTypeName: BookSpell, Assembly-CSharp
+        m_MethodName: OpenBook
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1201,7 +1221,7 @@ Canvas:
   m_GameObject: {fileID: 7999062935465409952}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1213,7 +1233,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_TargetDisplay: 0
 --- !u!114 &7098247971106988285
 MonoBehaviour:
@@ -1227,12 +1247,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1376,13 +1396,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: lala, Assembly-CSharp
-        m_MethodName: Lala
-        m_Mode: 1
+        m_TargetAssemblyTypeName: BookSpell, Assembly-CSharp
+        m_MethodName: OpenBook
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

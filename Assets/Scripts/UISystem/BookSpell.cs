@@ -33,7 +33,7 @@ public class BookSpell : MonoBehaviour
 
     public void OpenBook(int id)
     {
-       Spell spell = _spellManager.GetSpell(id);
+       Spell spell = _spellManager.GetSpell((RequestSystem.resolution)id);
 
         _title.text = spell.name;
         _description.text = spell.description;
