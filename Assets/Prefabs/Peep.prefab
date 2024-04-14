@@ -72,7 +72,9 @@ MonoBehaviour:
   _eyesList:
   - {fileID: 21300000, guid: a67618f9f845aa74ab1a1188df6faf2b, type: 3}
   - {fileID: 21300000, guid: 52ea99e8268a3aa4fa8ca336966797e5, type: 3}
-  _sadEyesList: []
+  _sadEyesList:
+  - {fileID: 21300000, guid: 565d2f12ae262b34cb527d62840b44a1, type: 3}
+  - {fileID: 21300000, guid: 053300bf2bac8a24db897504ea2d9935, type: 3}
   _happyEyes: {fileID: 21300000, guid: 8c991d8b79f3f7240855e521de50aa9a, type: 3}
 --- !u!95 &6675088902437080702
 Animator:
