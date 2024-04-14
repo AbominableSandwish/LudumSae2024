@@ -35,6 +35,7 @@ public class PauseManager : MonoBehaviour
         {
             IsParametre = false;
             _pause.SetActive(false);
+            _parametre.SetActive(false);
         }
         
         
