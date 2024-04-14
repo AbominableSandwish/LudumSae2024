@@ -30,4 +30,15 @@ public class CharacterSpawner : MonoBehaviour
         _eyes.sprite = _eyesList[Random.Range(0, _eyesList.Count)];
     }
     
+
+    public void Talk()
+    {
+        GameObject.Find("SpeechBubble").GetComponent<Animator>().Play("SpeechBubble");
+    }
+
+
+    public void Exit()
+    {
+        GameObject.Find("SpeechBubble").GetComponent<Animator>().Play("SpeechBubbleReverse");
+    }
 }
