@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: f795477340bb6344ea4d239478bfcfae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7663416311405038938
+    second: credit_Dylan von Arx_0
+  - first:
+      213: -8789796093792523272
+    second: credit_Dylan von Arx_1
+  - first:
+      213: 9099779817064039720
+    second: credit_Dylan von Arx_2
+  - first:
+      213: -4853805875247393984
+    second: credit_Dylan von Arx_3
+  - first:
+      213: 3915710863122918906
+    second: credit_Dylan von Arx_4
+  - first:
+      213: 5211384593947954795
+    second: credit_Dylan von Arx_5
+  - first:
+      213: 5126369838049855884
+    second: credit_Dylan von Arx_6
+  - first:
+      213: -8670797103187849732
+    second: credit_Dylan von Arx_7
+  - first:
+      213: 6790249101189630610
+    second: credit_Dylan von Arx_8
+  - first:
+      213: -6857738209406161394
+    second: credit_Dylan von Arx_9
+  - first:
+      213: 1373622965886638918
+    second: credit_Dylan von Arx_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 4
+        width: 99
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d4b3f588ce95a60800000000000000
+      internalID: 7663416311405038938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 6
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb6165e50f540680800000000000000
+      internalID: -8789796093792523272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 35
+        width: 37
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8250f5ae789e84e70800000000000000
+      internalID: 9099779817064039720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 53
+        width: 43
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043dc25e541d3acb0800000000000000
+      internalID: -4853805875247393984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_4
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 18
+        width: 51
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd649f9846675630800000000000000
+      internalID: 3915710863122918906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 36
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e06365dae825840800000000000000
+      internalID: 5211384593947954795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 42
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c890d300536842740800000000000000
+      internalID: 5126369838049855884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_7
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 18
+        width: 51
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd800979f32ba780800000000000000
+      internalID: -8670797103187849732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_8
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 33
+        width: 122
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ac2dcc49fcb3e50800000000000000
+      internalID: 6790249101189630610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_9
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 36
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ee8b1be6b64d0a0800000000000000
+      internalID: -6857738209406161394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: credit_Dylan von Arx_10
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 13
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bddf84fc6101310800000000000000
+      internalID: 1373622965886638918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      credit_Dylan von Arx_0: 7663416311405038938
+      credit_Dylan von Arx_1: -8789796093792523272
+      credit_Dylan von Arx_10: 1373622965886638918
+      credit_Dylan von Arx_2: 9099779817064039720
+      credit_Dylan von Arx_3: -4853805875247393984
+      credit_Dylan von Arx_4: 3915710863122918906
+      credit_Dylan von Arx_5: 5211384593947954795
+      credit_Dylan von Arx_6: 5126369838049855884
+      credit_Dylan von Arx_7: -8670797103187849732
+      credit_Dylan von Arx_8: 6790249101189630610
+      credit_Dylan von Arx_9: -6857738209406161394
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
