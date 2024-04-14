@@ -188,11 +188,14 @@ public class SpellManager : MonoBehaviour
 
     public void UnlockNewSpell()
     {
-        int rdm = UnityEngine.Random.Range(0, _spellsLocked.Count - 1);
-        _spellsUnlocked.Add(_spellsLocked[rdm]);
-        _librarysystem.UnlockBook(_spellsLocked[rdm].resolution);
-        spells.Add(_spellsLocked[rdm]);
-        _spellsLocked.RemoveAt(rdm);
+        if (_spellsLocked.Count != 0)
+        {
+            int rdm = UnityEngine.Random.Range(0, _spellsLocked.Count - 1);
+            _spellsUnlocked.Add(_spellsLocked[rdm]);
+            _librarysystem.UnlockBook(_spellsLocked[rdm].resolution);
+            spells.Add(_spellsLocked[rdm]);
+            _spellsLocked.RemoveAt(rdm);
+        }
     }
 
     public List<Spell> GetSpellUnlocked()

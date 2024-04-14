@@ -116,7 +116,7 @@ public class EvenementSystem : MonoBehaviour
 
     [SerializeField] private RequestSystem _requestSystem;
     [SerializeField] List<float> _timersList;
-    [SerializeField] private int maxEvenements = 0;
+    [SerializeField] private int maxEvenements = 4;
     private int totalEvents = 0;
 
     [SerializeField] private float tickTime = 0.0f;
@@ -131,7 +131,7 @@ public class EvenementSystem : MonoBehaviour
 
     public void AddNewTimer()
     {
-        _timersList.Add(baseTimerCooldown*Random.Range(0.5f,1.5f));
+        _timersList.Add(baseTimerCooldown*Random.Range(0.5f,3.5f));
         if(_timersList.Count % 5  == 0)
         {
             maxEvenements++;

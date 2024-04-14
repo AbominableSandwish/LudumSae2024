@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem.Android;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -14,6 +15,10 @@ public class GameManager : MonoBehaviour
 
     public GameState currentGameState = GameState.Init;
     private Reputation _reputation;
+
+    public float _counterTime = 0;
+
+    const int TIME_TO_NEXT_LEVEL = 30;
     
     private bool _isPaused = false;
     public bool IsPaused => _isPaused;
@@ -31,6 +36,17 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Time.timeScale = _isPaused ? 0 : 1;
+
+        if (!_isPaused)
+        {
+            _counterTime += Time.deltaTime;
+            if(_counterTime >= TIME_TO_NEXT_LEVEL) {
+                if()
+                GameObject.FindFirstObjectByType<SpellManager>().UnlockNewSpell();
+                GameObject.FindFirstObjectByType<EvenementSystem>().AddNewTimer();
+                _counterTime = 0;
+            }
+        }
     }
 
     public void SetGameState(GameState newState)

@@ -98,7 +98,6 @@ public class scoreSystem : MonoBehaviour
                 break;
                 
         }
-        
     }
     
     public void FailureScore()
