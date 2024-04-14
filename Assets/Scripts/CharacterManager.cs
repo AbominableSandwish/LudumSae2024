@@ -31,12 +31,23 @@ public class CharacterManager : MonoBehaviour
             PeepsUsed.Enqueue(peep);
         }
     }
-    public void FreePeep()
+    public void FreePeep(bool success)
     {
         if (PeepsUsed.Count != 0)
         {
             GameObject peep = PeepsUsed.Dequeue();
-            peep.GetComponent<Animator>().Play("Exit");
+            if (!success)
+            {
+                peep.GetComponent<CharacterSpawner>().Eyes.sprite = peep.GetComponent<CharacterSpawner>()
+                    .SadEyesList[Random.Range(0, peep.GetComponent<CharacterSpawner>().SadEyesList.Count)];
+                peep.GetComponent<CharacterSpawner>().ScratchMarks.gameObject.SetActive(true);
+                peep.GetComponent<Animator>().Play("Exit");
+            }
+            else
+            {
+                peep.GetComponent<CharacterSpawner>().Eyes.sprite = peep.GetComponent<CharacterSpawner>().HappyEyes;
+                peep.GetComponent<Animator>().Play("HappyPeep");
+            }
             PeepsFree.Enqueue(peep);
         }
     }

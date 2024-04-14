@@ -258,65 +258,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1179743798028953719, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179743798028953719, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Size.x
-      value: 3.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179743798028953719, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Size.y
-      value: 1.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179743798028953719, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 229590e82d5d94d438b8037ff357637c, type: 3}
-    - target: {fileID: 1179743798028953719, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529871957475796712, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1529871957475796712, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a67618f9f845aa74ab1a1188df6faf2b, type: 3}
-    - target: {fileID: 3187217376914268183, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3187217376914268183, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8894f6426a3ff0f43ad39eede5a9b1f4, type: 3}
     - target: {fileID: 4338943107039001892, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
       propertyPath: m_Name
       value: Peep
-      objectReference: {fileID: 0}
-    - target: {fileID: 4604914830498385284, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4604914830498385284, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Size.x
-      value: 3.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4604914830498385284, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Size.y
-      value: 4.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4604914830498385284, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 42cc74bdb401fa2439f3ac188c707d74, type: 3}
-    - target: {fileID: 4604914830498385284, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7446980057650680571, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -356,22 +300,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7446980057650680571, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8910921519073097861, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8910921519073097861, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Color.b
-      value: 0.73061
-      objectReference: {fileID: 0}
-    - target: {fileID: 8910921519073097861, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8110459
-      objectReference: {fileID: 0}
-    - target: {fileID: 8910921519073097861, guid: 07e2f22473a9e21419f83867af5547ee, type: 3}
-      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

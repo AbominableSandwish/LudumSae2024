@@ -33,7 +33,7 @@ public class BookSpell : MonoBehaviour
 
     public void OpenBook(int id)
     {
-       Spell spell = _spellManager.GetSpell(id);
+       Spell spell = _spellManager.GetSpell((RequestSystem.resolution)id);
 
         _title.text = spell.name;
         _description.text = spell.description;
@@ -43,18 +43,18 @@ public class BookSpell : MonoBehaviour
         {
             switch (dir)
             {
-                case Directions.Up:
-                    _arrows[i].GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(270, Vector3.forward);
-                    break;
-                case Directions.Down:
-                    _arrows[i].GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(90, Vector3.forward);
-                    break;
-                case Directions.Left:
+              case Directions.Up:
                     _arrows[i].GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(0, Vector3.forward);
-                    break;
-                case Directions.Right:
+                break; 
+              case Directions.Down:
                     _arrows[i].GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(180, Vector3.forward);
-                    break;
+                break;
+            case Directions.Left:
+                    _arrows[i].GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(90, Vector3.forward);
+                break;
+            case Directions.Right:
+                    _arrows[i].GetComponent<RectTransform>().rotation = Quaternion.AngleAxis(270, Vector3.forward);
+                break;
             }
             i++;
         }
