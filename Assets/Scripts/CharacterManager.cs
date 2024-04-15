@@ -42,8 +42,6 @@ public class CharacterManager : MonoBehaviour
     {
        if (currentPeep != null)
        {
-          currentPeep.GetComponent<CharacterSpawner>().Eyes.sprite = currentPeep.GetComponent<CharacterSpawner>()
-                  .SadEyesList[Random.Range(0, currentPeep.GetComponent<CharacterSpawner>().SadEyesList.Count)];
           if( currentPeep.GetComponent<CharacterSpawner>().SpellResult1 != null)
             currentPeep.GetComponent<CharacterSpawner>().SpellResult1.gameObject.SetActive(true);
 

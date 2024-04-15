@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 
 
@@ -92,10 +90,8 @@ public class RequestSystem : MonoBehaviour
             //Sucess
             if (_requests[0]._resolution == spell)
             {
-                Debug.Log("Success");
-                _score.SucessScore(_requests[0]._difficulty);
-                
                 currentPeep.GetComponent<CharacterSpawner>().SetSpellResult(spell, true);
+                _score.SucessScore(_requests[0]._difficulty);
 
                 _reputation.GainReputation(20);
                 _characterManager.FreePeep(true);
@@ -105,9 +101,10 @@ public class RequestSystem : MonoBehaviour
             //Failure
             if (_requests[0]._resolution != spell)
             {
+                currentPeep.GetComponent<CharacterSpawner>().SetSpellResult(spell, false);
                 _score.FailureScore();
                 
-                currentPeep.GetComponent<CharacterSpawner>().SetSpellResult(spell, false);
+               
 
                 _reputation.LoseReputation(10);
                 _characterManager.FreePeep(false);
@@ -127,12 +124,15 @@ public class RequestSystem : MonoBehaviour
             _particleSystem.Play();
         if (_requests.Count != 0)
         {
+            GameObject currentPeep = _characterManager.CurrentPeep;
+            currentPeep.GetComponent<CharacterSpawner>().SpellFailed();
             //Failure
             _score.FailureScore();
             _requests.Remove(_requests[0]);
             NbrRequest = _requests.Count;
             _characterManager.FreePeep(false);
             _reputation.LoseReputation(30);
+           
             if (_requests.Count != 0)
                 GameObject.Find("SpeechBubble").GetComponent<UIBubble>().SetComplaints(_requests[0]._resolution);
         }
