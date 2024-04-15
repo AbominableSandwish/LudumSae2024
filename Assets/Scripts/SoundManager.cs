@@ -336,7 +336,7 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void SetPitchMusic(int pitch)
+    public void SetPitchMusic(float pitch)
     {
 
         mixer.SetFloat("PitchMusic", pitch);

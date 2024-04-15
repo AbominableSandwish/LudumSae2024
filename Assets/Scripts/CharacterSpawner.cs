@@ -69,40 +69,51 @@ public class CharacterSpawner : MonoBehaviour
                 switch (resolution)
                 {
                     case RequestSystem.resolution.metamorphosis:
-                       
-                        _spellResult1.sprite = _metamorphosisSuccess1;
-                        _spellResult2.sprite = _metamorphosisSuccess2;
+                        if (_spellResult1)
+                            _spellResult1.sprite = _metamorphosisSuccess1;
+                        if (_spellResult2)
+                            _spellResult2.sprite = _metamorphosisSuccess2;
                         break;
                     case RequestSystem.resolution.Hurt:
-                        _spellResult1.sprite = null;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = null;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Invisible:
                         if (_soundManager)
                         {
                             _soundManager.PlaySound(SoundManager.Sound.SuccesStealth);
                         }
-                        _spellResult1.sprite = null;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = null;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         _body.sprite = null;
                         _beak.sprite = null;
                         _eyes.sprite = null;
                         break;
                     case RequestSystem.resolution.Lens:
-                        _spellResult1.sprite = null;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = null;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Tongue:
-                        _spellResult1.sprite = null;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = null;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Pickle:
                         if (_soundManager)
                         {
                             _soundManager.PlaySound(SoundManager.Sound.OpenPickle);
                         }
-                        _spellResult1.sprite = null;
-                        _spellResult2.sprite = null;
+                        if(_spellResult1)
+                            _spellResult1.sprite = null;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                 }
 
@@ -116,36 +127,48 @@ public class CharacterSpawner : MonoBehaviour
                         {
                             _soundManager.PlaySound(SoundManager.Sound.Demon);
                         }
-                        _spellResult1.sprite = _metamorphosisFailure;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = _metamorphosisFailure;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Hurt:
                         if (_soundManager)
                         {
                             _soundManager.PlaySound(SoundManager.Sound.Burning);
                         }
-                        _spellResult1.sprite = _defaultFailure;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = _defaultFailure;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Invisible:
                         if (_soundManager)
                         {
                             _soundManager.PlaySound(SoundManager.Sound.FailureStealth);
                         }
-                        _spellResult1.sprite = _invisibilityFailure1;
-                        _spellResult2.sprite = _invisibilityFailure2;
+                        if (_spellResult1)
+                            _spellResult1.sprite = _invisibilityFailure1;
+                        if (_spellResult2)
+                            _spellResult2.sprite = _invisibilityFailure2;
                         break;
                     case RequestSystem.resolution.Lens:
-                        _spellResult1.sprite = _defaultFailure;
-                        _spellResult2.sprite = null;
+                        if(_spellResult1)
+                            _spellResult1.sprite = _defaultFailure;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Tongue:
-                        _spellResult1.sprite = _defaultFailure;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = _defaultFailure;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                     case RequestSystem.resolution.Pickle:
-                        _spellResult1.sprite = _defaultFailure;
-                        _spellResult2.sprite = null;
+                        if (_spellResult1)
+                            _spellResult1.sprite = _defaultFailure;
+                        if (_spellResult2)
+                            _spellResult2.sprite = null;
                         break;
                 }
                 break;

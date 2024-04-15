@@ -66,12 +66,12 @@ public class RequestSystem : MonoBehaviour
     {
         if (_soundManager)
         {
-            if (_requests.Count >= 8)
+            if (_requests.Count >= 4)
             {
-                _soundManager.SetPitchMusic(3);
+                _soundManager.SetPitchMusic(1.5f);
             }
 
-            if (_requests.Count < 8)
+            if (_requests.Count < 4)
             {
                 _soundManager.SetPitchMusic(1);
             }
@@ -139,8 +139,9 @@ public class RequestSystem : MonoBehaviour
 
         if (_requests.Count == 1)
             GameObject.Find("SpeechBubble").GetComponent<UIBubble>().SetComplaints(spells[rdm].resolution);
-        if (_requests.Count == 10)
+        if (_requests.Count == 6)
         {
+            _soundManager.SetPitchMusic(1);
             SceneManager.LoadScene("MenuScore");
         }
     }

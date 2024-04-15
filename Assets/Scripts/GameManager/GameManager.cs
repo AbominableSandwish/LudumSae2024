@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem.Android;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -41,8 +40,6 @@ public class GameManager : MonoBehaviour
         {
             _counterTime += Time.deltaTime;
             if(_counterTime >= TIME_TO_NEXT_LEVEL) {
-                GameObject.FindFirstObjectByType<SpellManager>().UnlockNewSpell();
-                GameObject.FindFirstObjectByType<EvenementSystem>().AddNewTimer();
                 _counterTime = 0;
             }
         }

@@ -14,11 +14,11 @@ public class BookSpell : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _description;
 
     [SerializeField] private List<Image> _arrows;
-    SpellManager _spellManager;
 
+    SpellManager _spellManager;
     SoundManager _soundManager;
 
-
+    [SerializeField] List<Sprite> _complaints;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +62,9 @@ public class BookSpell : MonoBehaviour
             }
             i++;
         }
+
+        _imageSpell_0.sprite = _complaints[id];
+        _imageSpell_1.sprite = _complaints[id];
 
         _canvas.enabled = true;
 

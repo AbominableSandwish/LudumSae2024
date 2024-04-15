@@ -65,8 +65,7 @@ public class PauseManager : MonoBehaviour
 
     public void ReturnMenu()
     {
-        GameObject.Find("SceneManager").GetComponent<LevelLoader>().LoadScene("MainMenu");
-
+        GameObject.FindAnyObjectByType<LevelLoader>().LoadScene("MainMenu");
     }
 
 }

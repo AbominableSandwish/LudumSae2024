@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    [SerializeField] private GameObject _canvasPausePrefab;
-    GameObject _canvasPause;
 
     private void Start()
     {
@@ -27,12 +25,12 @@ public class LevelLoader : MonoBehaviour
     {
         if (sceneName == "MainMenu")
         {
-            if (_canvasPause != null)
-                Destroy(_canvasPause);
-            if( GameObject.Find("GameManager"))
-                Destroy(GameObject.Find("GameManager"));
-            if (GameObject.Find("score"))
-                Destroy(GameObject.Find("ScoreSystem"));
+            if(GameObject.FindFirstObjectByType<GameManager>() != null)
+                Destroy(GameObject.FindFirstObjectByType<GameManager>().gameObject);
+            if (GameObject.FindFirstObjectByType<scoreSystem>() != null)
+                Destroy(GameObject.FindFirstObjectByType<scoreSystem>().gameObject);
+            if(GameObject.FindFirstObjectByType<LevelLoader>() != null)
+                Destroy(GameObject.FindFirstObjectByType<LevelLoader>().gameObject);
 
             if (GameObject.Find("SoundManager"))
                 GameObject.Find("SoundManager").GetComponent<SoundManager>().PlayMusic(SoundManager.Music.MainMenu);
@@ -40,11 +38,6 @@ public class LevelLoader : MonoBehaviour
 
         if (sceneName == "InGame")
         {
-            if (_canvasPausePrefab != null)
-            {
-                _canvasPause = Instantiate(_canvasPausePrefab);
-                DontDestroyOnLoad(_canvasPause);
-            }
              if (GameObject.Find("SoundManager"))
                 GameObject.Find("SoundManager").GetComponent<SoundManager>().PlayMusic(SoundManager.Music.InGame);
         }

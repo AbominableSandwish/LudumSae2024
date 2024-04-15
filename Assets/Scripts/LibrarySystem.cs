@@ -6,6 +6,7 @@ public class LibrarySystem : MonoBehaviour
 {
 
     [SerializeField]List<GameObject> books;
+
     // Start is called before the first frame update
     void Start()
     {

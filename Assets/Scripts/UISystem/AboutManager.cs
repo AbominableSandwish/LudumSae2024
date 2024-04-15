@@ -7,6 +7,6 @@ public class AboutManager : MonoBehaviour
 {
     public void LoadScene()
     {
-        SceneManager.LoadScene("MainMenu");
+        GameObject.FindFirstObjectByType<LevelLoader>().LoadScene("MainMenu");
     }
 }
