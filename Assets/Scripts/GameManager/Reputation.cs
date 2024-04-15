@@ -60,7 +60,7 @@ public class Reputation : MonoBehaviour
 
     public void CheckUpgrade()
     {
-        if (CheckFibonaci(_counterReputation))
+        if (CheckFibonaci(accumationReputation))
         {
             _levelReputation++;
             GameObject.FindFirstObjectByType<SpellManager>().UnlockNewSpell();
