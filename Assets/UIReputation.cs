@@ -8,6 +8,7 @@ public class UIReputation : MonoBehaviour
     Reputation _reputation;
 
     [SerializeField] Image _bar;
+    SoundManager _soundManager;
     float currentValue = 0;
 
     Color _basicColor;
@@ -18,6 +19,7 @@ public class UIReputation : MonoBehaviour
 
     private void Start()
     {
+        _soundManager = GameObject.FindAnyObjectByType<SoundManager>();
         _basicColor = _bar.color;
         _currentColor = _basicColor;
         _reputation = GameObject.FindFirstObjectByType<Reputation>();
@@ -35,7 +37,9 @@ public class UIReputation : MonoBehaviour
 
         if(currentValue < 30)
         {
-            if(colorSens == 1)
+            if(_soundManager)
+                _soundManager.SetPitchMusic(1.25f);
+            if (colorSens == 1)
             {
                 //direction Red Color
                 Color dir = Color.red - _currentColor;
@@ -63,6 +67,8 @@ public class UIReputation : MonoBehaviour
 
         if (currentValue >= 30)
         {
+            if(_soundManager)
+                _soundManager.SetPitchMusic(1f);
             _bar.color = _basicColor;
         }
     }

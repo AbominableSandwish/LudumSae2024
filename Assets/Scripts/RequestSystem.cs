@@ -72,7 +72,7 @@ public class RequestSystem : MonoBehaviour
         {
             if (_requests.Count >= 4)
             {
-                _soundManager.SetPitchMusic(1.5f);
+                _soundManager.SetPitchMusic(1.25f);
             }
 
             if (_requests.Count < 4)
